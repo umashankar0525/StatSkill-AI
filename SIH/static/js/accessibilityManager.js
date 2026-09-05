@@ -25,7 +25,6 @@
         saturation: 0           // 0=normal, 1=low, 2=grayscale
     };
 
-    var CONTRAST_LABELS = ['Off', 'High Contrast', 'Yellow on Black', 'Blue on Cream'];
 
     /* ── State ────────────────────────────────────────────── */
     var settings = loadSettings();

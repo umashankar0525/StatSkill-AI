@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 256" role="img" aria-labelledby="title">
+  <title id="title">StatSkill AI learning analytics logo</title>
+  <g transform="translate(24 24)">
+    <path fill="#10243E" d="M20 52c42 0 70 12 86 34v118c-18-17-47-26-86-26V52z"/>
+    <path fill="#10243E" d="M192 52c-42 0-70 12-86 34v118c18-17 47-26 86-26V52z"/>
+    <path fill="#20A39E" d="M126 138h24V92h-24zm34 0h24V66h-24zm34 0h24V30h-24z"/>
+  </g>
+  <text x="286" y="158" fill="#10243E" font-family="'Helvetica Neue', Arial, sans-serif" font-size="92" font-weight="700" letter-spacing="-3">StatSkill</text>
+  <text x="672" y="158" fill="#20A39E" font-family="'Helvetica Neue', Arial, sans-serif" font-size="92" font-weight="700" letter-spacing="-3"> AI</text>
+</svg>

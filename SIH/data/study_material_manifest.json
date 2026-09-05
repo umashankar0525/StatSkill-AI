@@ -1,0 +1,149 @@
+{
+  "source": "User supplied PDFs, 2026-09-04",
+  "excluded_framework": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed (1).pdf",
+  "materials": [
+    {
+      "filename": "Part1_Sampling_Design_Ch1-6.pdf",
+      "title": "Sampling Design — Chapters 1–6",
+      "competencies": [
+        "C_SURVEY",
+        "C_SAMPLING",
+        "C_R"
+      ],
+      "sha256": "ed97c7023aabcf32dca5cf80bb782122c62899991a60abc5cdea17a8f3077e5c",
+      "pages": 144
+    },
+    {
+      "filename": "Part2_Survey_Data_Analysis_Ch7-12.pdf",
+      "title": "Survey Data Analysis — Chapters 7–12",
+      "competencies": [
+        "C_SURVEY",
+        "C_SAMPLING",
+        "C_R",
+        "C_DATA_QUALITY"
+      ],
+      "sha256": "f1fbbe647368af6f464f9d6250f892dada0bca7a69d7a4f0e0a4f35f24aa009b",
+      "pages": 138
+    },
+    {
+      "filename": "Labourstat1-compressed.pdf",
+      "title": "Sources and Uses of Labour Statistics",
+      "competencies": [
+        "C_LABOUR",
+        "C_PRICE"
+      ],
+      "sha256": "860ad14b8a4d22da06c00c393aec7225c3aec5693a5bdedee1f3dafcd99d4e76",
+      "pages": 40
+    },
+    {
+      "filename": "comms-compressed.pdf",
+      "title": "Introduction to Effective Communication",
+      "competencies": [
+        "C_COMMUNICATION"
+      ],
+      "sha256": "695fac4a59a3b2d569e4ffb433a8f1b0ca702961c118cb506944799b8e485544",
+      "pages": 22
+    },
+    {
+      "filename": "Indusstat1-compressed.pdf",
+      "title": "Industrial Statistics",
+      "competencies": [
+        "C_INDUSTRIAL",
+        "C_DATA_QUALITY",
+        "C_LEADERSHIP"
+      ],
+      "sha256": "36c4720981bf7e05028c282937eddf9eb3c17ab74d3ed532cc45124fa39a7adf",
+      "pages": 201
+    },
+    {
+      "filename": "SDGind1.pdf",
+      "title": "Global SDG Indicator Framework",
+      "competencies": [
+        "C_SDG"
+      ],
+      "sha256": "9de9223a2c09994c195e78354d924f97bfde9ece373d499234ab3356f8f87a72",
+      "pages": 23
+    },
+    {
+      "filename": "AI & ML-compressed.pdf",
+      "title": "Artificial Intelligence and Machine Learning",
+      "competencies": [
+        "C_AI_ML"
+      ],
+      "sha256": "7c5792023bf4572e600f46d12272dfc65a33a29b43b17f046efffcafc1f1ee2e",
+      "pages": 177
+    },
+    {
+      "filename": "cyber-security-compressed.pdf",
+      "title": "Introduction to Cyber Security",
+      "competencies": [
+        "C_CYBER",
+        "C_DIGITAL_SIGNATURES",
+        "C_DPDP"
+      ],
+      "sha256": "e0816ddd4788d7c1ff89c1e9a06d4ca174274a65f4e7abb3e777c00c003d1c4d",
+      "pages": 152
+    },
+    {
+      "filename": "agristat-compressed-compressed.pdf",
+      "title": "Handbook on Crop Statistics",
+      "competencies": [
+        "C_AGRI",
+        "C_SURVEY",
+        "C_SAMPLING",
+        "C_DATA_QUALITY",
+        "C_GIS",
+        "C_PRICE"
+      ],
+      "sha256": "fc5fae4c80ccb2cca08c21ec80b457912ef09bb1cd8792bf1f2744020917fe44",
+      "pages": 219
+    },
+    {
+      "filename": "Workplace_Ethics_Communication_Decision_Making_Frameworks_Complete.pdf",
+      "title": "Workplace Ethics, Communication and Decision Making",
+      "competencies": [
+        "C_ETHICS",
+        "C_COMMUNICATION",
+        "C_DECISION_MAKING",
+        "C_DPDP"
+      ],
+      "sha256": "da8ccf52b37edb7ab686ccccf234986699cb31cbb234fffd21369907f76a6e90",
+      "pages": 7
+    },
+    {
+      "filename": "HandsOnDataViz_compressed.pdf",
+      "title": "Hands-On Data Visualization",
+      "competencies": [
+        "C_DATAVIZ",
+        "C_OPEN_DATA",
+        "C_GIS",
+        "C_DATA_QUALITY"
+      ],
+      "sha256": "c4161ae90cdb04c0448db11c49c6fe94c279fd9a7cf631902671cd340ff92b2f",
+      "pages": 443
+    },
+    {
+      "filename": "sql-notes-for-professionals.pdf",
+      "title": "SQL Notes for Professionals",
+      "competencies": [
+        "C_SQL"
+      ],
+      "sha256": "fa21602b40fdf6ff2674bdf5f75e32d2af61d2910d9d8718ebe72aca25c009d1",
+      "pages": 166
+    },
+    {
+      "filename": "Tutorial_EDIT.pdf",
+      "title": "Python Tutorial — Release 3.7",
+      "competencies": [
+        "C_PYTHON"
+      ],
+      "sha256": "ac39e76345fbac3f489be1a1d8a3283977247cdaea6288f4ad3d1b82a6d96453",
+      "pages": 155
+    }
+  ],
+  "coverage_notes": {
+    "C_PRICE": "Introductory coverage of price data, CPI uses and crop-price collection; no dedicated price-index textbook was supplied.",
+    "C_DPDP": "General privacy and confidentiality material; the supplied 2017 cyber text is not a reference for the later DPDP Act.",
+    "C_PYTHON": "The supplied tutorial documents Python 3.7; questions must follow the source version."
+  }
+}

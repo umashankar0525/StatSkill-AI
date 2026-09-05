@@ -1,0 +1,15 @@
+sqlite-vec
+sentence-transformers
+pymupdf
+python-docx
+python-pptx
+openpyxl
+xlrd
+Pillow
+pytesseract
+chardet
+striprtf
+faster-whisper
+
+# External converters: Tesseract OCR and LibreOffice.
+# Ollama must have llama3.1:8b; embeddings and Whisper base are cached separately.

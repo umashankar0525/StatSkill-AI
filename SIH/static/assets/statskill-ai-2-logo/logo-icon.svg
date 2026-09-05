@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">StatSkill AI adaptive signal icon</title>
+  <path fill="#10243E" d="M128 24c57 0 104 46 104 104 0 26-10 50-26 68l-34-34c8-9 13-21 13-34 0-32-25-58-57-58s-57 26-57 58 25 58 57 58v46c-57 0-104-46-104-104S71 24 128 24z"/>
+  <path fill="#18A999" d="m114 107 30-30 68 68-30 30z"/>
+  <circle cx="128" cy="128" r="24" fill="#18A999"/>
+  <circle cx="216" cy="145" r="18" fill="#10243E"/>
+</svg>

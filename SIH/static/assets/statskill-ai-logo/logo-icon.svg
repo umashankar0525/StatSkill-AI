@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title description">
+  <title id="title">StatSkill AI guided growth icon</title>
+  <desc id="description">A competency framework containing an S-shaped learning path that rises into an arrow.</desc>
+  <path fill="#0B1B2B" d="M128 8 232 68v120l-104 60-104-60V68z"/>
+  <path fill="none" stroke="#14B8A6" stroke-width="21" stroke-linecap="round" d="M72 174c22 31 87 31 105-4 17-34-20-44-52-50-35-7-51-23-38-50 14-28 65-29 92-6"/>
+  <path fill="#14B8A6" d="m201 38-7 47-41-23z"/>
+</svg>

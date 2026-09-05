@@ -1,0 +1,2397 @@
+{
+  "version": "supplied-pdfs-four-ministries-2026-09-04",
+  "sources": [
+    {
+      "file": "All4one.pdf",
+      "sha256": "b101b06b0ecd57f4203c3c07d78f1714f9c86a97e5ffd568aad4054bee950725"
+    },
+    {
+      "file": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+      "sha256": "08c58f352a47f187cffc6c46cdf0a059252ef1e27d6c7242e415592929c4b8b6"
+    }
+  ],
+  "precedence": "Filtered PDF overrides the matching six domains. The other eleven All4one domains retain every explicit topic requirement from the full 33-topic register. A dash is not a requirement.",
+  "competencies": [
+    {
+      "id": "C_SURVEY",
+      "code": "C1",
+      "name": "Survey Design",
+      "type": "Domain"
+    },
+    {
+      "id": "C_SAMPLING",
+      "code": "C2",
+      "name": "Sampling",
+      "type": "Domain"
+    },
+    {
+      "id": "C_PYTHON",
+      "code": "C3",
+      "name": "Python",
+      "type": "Functional"
+    },
+    {
+      "id": "C_SQL",
+      "code": "C4",
+      "name": "SQL",
+      "type": "Functional"
+    },
+    {
+      "id": "C_ETHICS",
+      "code": "C5",
+      "name": "Ethics",
+      "type": "Behavioural"
+    },
+    {
+      "id": "C_LABOUR",
+      "code": "C6",
+      "name": "Labour Statistics",
+      "type": "Domain"
+    },
+    {
+      "id": "C_AGRI",
+      "code": "C7",
+      "name": "Agricultural Statistics",
+      "type": "Domain"
+    },
+    {
+      "id": "C_INDUSTRIAL",
+      "code": "C8",
+      "name": "Industrial Statistics",
+      "type": "Domain"
+    },
+    {
+      "id": "C_SDG",
+      "code": "C9",
+      "name": "SDG Indicators",
+      "type": "Domain"
+    },
+    {
+      "id": "C_AI_ML",
+      "code": "C10",
+      "name": "AI/ML",
+      "type": "Functional"
+    },
+    {
+      "id": "C_CYBER",
+      "code": "C11",
+      "name": "Cybersecurity",
+      "type": "Functional"
+    },
+    {
+      "id": "C_COMMUNICATION",
+      "code": "C12",
+      "name": "Communication",
+      "type": "Behavioural"
+    },
+    {
+      "id": "C_NAT_ACC",
+      "code": "T3",
+      "name": "National Accounts",
+      "type": "Domain"
+    },
+    {
+      "id": "C_PRICE",
+      "code": "T4",
+      "name": "Price Statistics",
+      "type": "Domain"
+    },
+    {
+      "id": "C_METADATA",
+      "code": "T9",
+      "name": "Metadata Standards",
+      "type": "Domain"
+    },
+    {
+      "id": "C_DATA_QUALITY",
+      "code": "T10",
+      "name": "Data Quality Frameworks",
+      "type": "Domain"
+    },
+    {
+      "id": "C_R",
+      "code": "T12",
+      "name": "R",
+      "type": "Functional"
+    },
+    {
+      "id": "C_STATA",
+      "code": "T14",
+      "name": "Stata",
+      "type": "Functional"
+    },
+    {
+      "id": "C_SPSS",
+      "code": "T15",
+      "name": "SPSS",
+      "type": "Functional"
+    },
+    {
+      "id": "C_SAS",
+      "code": "T16",
+      "name": "SAS",
+      "type": "Functional"
+    },
+    {
+      "id": "C_GIS",
+      "code": "T17",
+      "name": "GIS & Geospatial",
+      "type": "Functional"
+    },
+    {
+      "id": "C_DATAVIZ",
+      "code": "T18",
+      "name": "Data Visualization",
+      "type": "Functional"
+    },
+    {
+      "id": "C_CLOUD",
+      "code": "T20",
+      "name": "Cloud Computing",
+      "type": "Functional"
+    },
+    {
+      "id": "C_APIS",
+      "code": "T21",
+      "name": "APIs",
+      "type": "Functional"
+    },
+    {
+      "id": "C_OPEN_DATA",
+      "code": "T22",
+      "name": "Open Data",
+      "type": "Functional"
+    },
+    {
+      "id": "C_DPDP",
+      "code": "T24",
+      "name": "Data Privacy",
+      "type": "Functional"
+    },
+    {
+      "id": "C_DIGITAL_SIGNATURES",
+      "code": "T25",
+      "name": "Digital Signatures",
+      "type": "Functional"
+    },
+    {
+      "id": "C_GOV_CLOUD",
+      "code": "T26",
+      "name": "Government Cloud",
+      "type": "Functional"
+    },
+    {
+      "id": "C_DPI",
+      "code": "T27",
+      "name": "Digital Public Infrastructure (DPI)",
+      "type": "Functional"
+    },
+    {
+      "id": "C_LEADERSHIP",
+      "code": "T28",
+      "name": "Leadership",
+      "type": "Behavioural"
+    },
+    {
+      "id": "C_PROJECT_MGMT",
+      "code": "T30",
+      "name": "Project Management",
+      "type": "Behavioural"
+    },
+    {
+      "id": "C_DECISION_MAKING",
+      "code": "T32",
+      "name": "Decision Making",
+      "type": "Behavioural"
+    },
+    {
+      "id": "C_CHANGE_MGMT",
+      "code": "T33",
+      "name": "Change Management",
+      "type": "Behavioural"
+    }
+  ],
+  "levels": {
+    "0": "No Demonstrated Foundation / Needs Foundational Support",
+    "1": "Foundational / Guided",
+    "2": "Working / Independent",
+    "3": "Practitioner / Analytical",
+    "4": "Advanced / Supervisory",
+    "5": "Expert / Strategic",
+    "6": "Leadership / Governance"
+  },
+  "areas": [
+    {
+      "id": "A01",
+      "name": "Survey Methodology & Sampling",
+      "roles": [
+        {
+          "title": "Junior Statistical Officer",
+          "grade": 1,
+          "requirements": {
+            "C_SURVEY": 1,
+            "C_SAMPLING": 1,
+            "C_PYTHON": 1,
+            "C_SQL": 1,
+            "C_ETHICS": 1,
+            "C_COMMUNICATION": 1
+          },
+          "duties": "Supports questionnaire documentation, pilot preparation, frame checks, and",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 3,
+          "id": "PDF_A01_L1"
+        },
+        {
+          "title": "Statistical Officer",
+          "grade": 2,
+          "requirements": {
+            "C_SURVEY": 2,
+            "C_SAMPLING": 2,
+            "C_PYTHON": 2,
+            "C_SQL": 2,
+            "C_ETHICS": 2,
+            "C_COMMUNICATION": 2
+          },
+          "duties": "Implements approved survey and sampling procedures, checks datasets, and",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 3,
+          "id": "PDF_A01_L2"
+        },
+        {
+          "title": "Assistant Director",
+          "grade": 3,
+          "requirements": {
+            "C_SURVEY": 3,
+            "C_SAMPLING": 3,
+            "C_PYTHON": 2,
+            "C_SQL": 2,
+            "C_ETHICS": 3,
+            "C_COMMUNICATION": 3
+          },
+          "duties": "Reviews survey plans, analyses implementation issues, and translates",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 3,
+          "id": "PDF_A01_L3"
+        },
+        {
+          "title": "Deputy Director / Joint Director",
+          "grade": 4,
+          "requirements": {
+            "C_SURVEY": 4,
+            "C_SAMPLING": 4,
+            "C_PYTHON": 3,
+            "C_SQL": 3,
+            "C_ETHICS": 4,
+            "C_COMMUNICATION": 4
+          },
+          "duties": "Reviews methodology and sample designs, oversees quality controls, and",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 3,
+          "id": "PDF_A01_L4"
+        },
+        {
+          "title": "Director / Senior Leadership",
+          "grade": 5,
+          "requirements": {
+            "C_SURVEY": 5,
+            "C_SAMPLING": 5,
+            "C_ETHICS": 5,
+            "C_COMMUNICATION": 5
+          },
+          "duties": "Provides expert direction for survey programmes and establishes methodological",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 3,
+          "id": "PDF_A01_L5"
+        },
+        {
+          "title": "Director General / Organization Head",
+          "grade": 6,
+          "requirements": {
+            "C_SURVEY": 6,
+            "C_SAMPLING": 6,
+            "C_ETHICS": 6,
+            "C_COMMUNICATION": 6
+          },
+          "duties": "Sets organization-wide survey priorities, governance principles, and national",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 3,
+          "id": "PDF_A01_L6"
+        }
+      ],
+      "source_area": "MoSPI — Survey Methodology & Sampling",
+      "ministry_id": "MOSPI",
+      "ministry": "Ministry of Statistics & Programme Implementation (MoSPI)"
+    },
+    {
+      "id": "A02",
+      "name": "National Accounts & Economic Statistics",
+      "roles": [
+        {
+          "title": "Junior Statistical Officer",
+          "grade": 1,
+          "requirements": {
+            "C_NAT_ACC": 1,
+            "C_INDUSTRIAL": 1,
+            "C_DATA_QUALITY": 1,
+            "C_SQL": 1,
+            "C_DATAVIZ": 1,
+            "C_DPDP": 1,
+            "C_COMMUNICATION": 1,
+            "C_ETHICS": 1
+          },
+          "duties": "Assists with compilation inputs, data checking, and preparation of working tables.",
+          "source": "All4one.pdf",
+          "page": 3,
+          "id": "PDF_A02_L1"
+        },
+        {
+          "title": "Senior Statistical Officer",
+          "grade": 2,
+          "requirements": {
+            "C_NAT_ACC": 2,
+            "C_INDUSTRIAL": 2,
+            "C_DATA_QUALITY": 2,
+            "C_PYTHON": 2,
+            "C_SQL": 2,
+            "C_DATAVIZ": 2,
+            "C_DPDP": 2,
+            "C_COMMUNICATION": 2,
+            "C_PROJECT_MGMT": 1,
+            "C_ETHICS": 2
+          },
+          "duties": "Compiles and validates assigned datasets, performs standard calculations, and prepares statistical tables.",
+          "source": "All4one.pdf",
+          "page": 3,
+          "id": "PDF_A02_L2"
+        },
+        {
+          "title": "Assistant Director",
+          "grade": 3,
+          "requirements": {
+            "C_NAT_ACC": 3,
+            "C_INDUSTRIAL": 3,
+            "C_METADATA": 2,
+            "C_DATA_QUALITY": 3,
+            "C_PYTHON": 2,
+            "C_SQL": 3,
+            "C_DATAVIZ": 3,
+            "C_DPDP": 2,
+            "C_COMMUNICATION": 3,
+            "C_PROJECT_MGMT": 3,
+            "C_ETHICS": 3,
+            "C_DECISION_MAKING": 2
+          },
+          "duties": "Analyses compilation issues, reviews statistical outputs, and coordinates inputs from data sources.",
+          "source": "All4one.pdf",
+          "page": 3,
+          "id": "PDF_A02_L3"
+        },
+        {
+          "title": "Deputy Director / Joint Director",
+          "grade": 4,
+          "requirements": {
+            "C_NAT_ACC": 4,
+            "C_INDUSTRIAL": 4,
+            "C_METADATA": 3,
+            "C_DATA_QUALITY": 4,
+            "C_DATAVIZ": 3,
+            "C_OPEN_DATA": 3,
+            "C_DPDP": 3,
+            "C_LEADERSHIP": 3,
+            "C_COMMUNICATION": 4,
+            "C_PROJECT_MGMT": 4,
+            "C_ETHICS": 4,
+            "C_DECISION_MAKING": 4,
+            "C_CHANGE_MGMT": 3
+          },
+          "duties": "Reviews national accounting methods, reconciles technical discrepancies, and supervises outputs.",
+          "source": "All4one.pdf",
+          "page": 3,
+          "id": "PDF_A02_L4"
+        },
+        {
+          "title": "Director / Senior Leadership",
+          "grade": 5,
+          "requirements": {
+            "C_NAT_ACC": 5,
+            "C_INDUSTRIAL": 5,
+            "C_METADATA": 4,
+            "C_DATA_QUALITY": 5,
+            "C_OPEN_DATA": 4,
+            "C_DPDP": 4,
+            "C_DPI": 4,
+            "C_LEADERSHIP": 5,
+            "C_COMMUNICATION": 5,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 5,
+            "C_DECISION_MAKING": 5,
+            "C_CHANGE_MGMT": 4
+          },
+          "duties": "Provides expert direction, oversees major national accounts outputs, and coordinates policy decisions.",
+          "source": "All4one.pdf",
+          "page": 3,
+          "id": "PDF_A02_L5"
+        },
+        {
+          "title": "Director General / Organization Head",
+          "grade": 6,
+          "requirements": {
+            "C_NAT_ACC": 6,
+            "C_INDUSTRIAL": 5,
+            "C_DATA_QUALITY": 5,
+            "C_DPDP": 5,
+            "C_DPI": 5,
+            "C_LEADERSHIP": 6,
+            "C_COMMUNICATION": 6,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 6,
+            "C_DECISION_MAKING": 6,
+            "C_CHANGE_MGMT": 6
+          },
+          "duties": "Leads macroeconomic data governance and aligns national accounting frameworks with global standards.",
+          "source": "All4one.pdf",
+          "page": 3,
+          "id": "PDF_A02_L6"
+        }
+      ],
+      "source_area": "MoSPI — National Accounts & Economic Stats",
+      "ministry_id": "MOSPI",
+      "ministry": "Ministry of Statistics & Programme Implementation (MoSPI)"
+    },
+    {
+      "id": "A03",
+      "name": "Price & Index Statistics",
+      "roles": [
+        {
+          "title": "Junior Statistical Officer",
+          "grade": 1,
+          "requirements": {
+            "C_PRICE": 1,
+            "C_DATA_QUALITY": 1,
+            "C_SQL": 1,
+            "C_DATAVIZ": 1,
+            "C_DPDP": 1,
+            "C_DIGITAL_SIGNATURES": 1,
+            "C_COMMUNICATION": 1,
+            "C_ETHICS": 1
+          },
+          "duties": "Checks price data, maintains base price schedules, and supports routine index compilation.",
+          "source": "All4one.pdf",
+          "page": 3,
+          "id": "PDF_A03_L1"
+        },
+        {
+          "title": "Senior Statistical Officer",
+          "grade": 2,
+          "requirements": {
+            "C_PRICE": 2,
+            "C_DATA_QUALITY": 2,
+            "C_PYTHON": 2,
+            "C_SQL": 2,
+            "C_DATAVIZ": 2,
+            "C_DPDP": 2,
+            "C_DIGITAL_SIGNATURES": 2,
+            "C_COMMUNICATION": 2,
+            "C_PROJECT_MGMT": 1,
+            "C_ETHICS": 2
+          },
+          "duties": "Processes price data, applies standard weighting and index formulas, and generates routine outputs.",
+          "source": "All4one.pdf",
+          "page": 4,
+          "id": "PDF_A03_L2"
+        },
+        {
+          "title": "Assistant Director",
+          "grade": 3,
+          "requirements": {
+            "C_PRICE": 3,
+            "C_METADATA": 2,
+            "C_DATA_QUALITY": 3,
+            "C_PYTHON": 2,
+            "C_SQL": 3,
+            "C_DATAVIZ": 3,
+            "C_DPDP": 2,
+            "C_COMMUNICATION": 3,
+            "C_PROJECT_MGMT": 3,
+            "C_ETHICS": 3,
+            "C_DECISION_MAKING": 2
+          },
+          "duties": "Reviews price anomalies, validates index analytical outputs, and coordinates data-processing workflows.",
+          "source": "All4one.pdf",
+          "page": 4,
+          "id": "PDF_A03_L3"
+        },
+        {
+          "title": "Deputy Director / Joint Director",
+          "grade": 4,
+          "requirements": {
+            "C_PRICE": 4,
+            "C_METADATA": 3,
+            "C_DATA_QUALITY": 4,
+            "C_DATAVIZ": 3,
+            "C_OPEN_DATA": 3,
+            "C_DPDP": 3,
+            "C_LEADERSHIP": 3,
+            "C_COMMUNICATION": 4,
+            "C_PROJECT_MGMT": 4,
+            "C_ETHICS": 4,
+            "C_DECISION_MAKING": 4,
+            "C_CHANGE_MGMT": 3
+          },
+          "duties": "Reviews index calculation methodology, oversees quality controls, and manages release schedules.",
+          "source": "All4one.pdf",
+          "page": 4,
+          "id": "PDF_A03_L4"
+        },
+        {
+          "title": "Director / Senior Leadership",
+          "grade": 5,
+          "requirements": {
+            "C_PRICE": 5,
+            "C_METADATA": 4,
+            "C_DATA_QUALITY": 5,
+            "C_OPEN_DATA": 4,
+            "C_DPDP": 4,
+            "C_DPI": 4,
+            "C_LEADERSHIP": 5,
+            "C_COMMUNICATION": 5,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 5,
+            "C_DECISION_MAKING": 5,
+            "C_CHANGE_MGMT": 4
+          },
+          "duties": "Directs price index revisions, establishes statistical standards, and oversees release governance.",
+          "source": "All4one.pdf",
+          "page": 4,
+          "id": "PDF_A03_L5"
+        },
+        {
+          "title": "Director General / Organization Head",
+          "grade": 6,
+          "requirements": {
+            "C_PRICE": 6,
+            "C_DATA_QUALITY": 5,
+            "C_DPDP": 5,
+            "C_DPI": 5,
+            "C_LEADERSHIP": 6,
+            "C_COMMUNICATION": 6,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 6,
+            "C_DECISION_MAKING": 6,
+            "C_CHANGE_MGMT": 6
+          },
+          "duties": "Directs inflation and price monitoring architecture across national statistical systems.",
+          "source": "All4one.pdf",
+          "page": 4,
+          "id": "PDF_A03_L6"
+        }
+      ],
+      "source_area": "MoSPI — Price & Index Statistics",
+      "ministry_id": "MOSPI",
+      "ministry": "Ministry of Statistics & Programme Implementation (MoSPI)"
+    },
+    {
+      "id": "A04",
+      "name": "Industrial Statistics",
+      "roles": [
+        {
+          "title": "Junior Statistical Officer",
+          "grade": 1,
+          "requirements": {
+            "C_INDUSTRIAL": 1,
+            "C_SQL": 1,
+            "C_ETHICS": 1,
+            "C_COMMUNICATION": 1
+          },
+          "duties": "Supports collection, validation, and preliminary preparation of industrial statistics.",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 4,
+          "id": "PDF_A04_L1"
+        },
+        {
+          "title": "Senior Statistical Officer",
+          "grade": 2,
+          "requirements": {
+            "C_INDUSTRIAL": 2,
+            "C_PYTHON": 2,
+            "C_SQL": 2,
+            "C_ETHICS": 2,
+            "C_COMMUNICATION": 2
+          },
+          "duties": "Processes industrial datasets, performs logic checks, and generates routine",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 4,
+          "id": "PDF_A04_L2"
+        },
+        {
+          "title": "Assistant Director",
+          "grade": 3,
+          "requirements": {
+            "C_INDUSTRIAL": 3,
+            "C_PYTHON": 2,
+            "C_SQL": 3,
+            "C_ETHICS": 3,
+            "C_COMMUNICATION": 3
+          },
+          "duties": "Reviews data quality, resolves classification anomalies, and manages",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 4,
+          "id": "PDF_A04_L3"
+        },
+        {
+          "title": "Deputy Director / Joint Director",
+          "grade": 4,
+          "requirements": {
+            "C_INDUSTRIAL": 4,
+            "C_PYTHON": 3,
+            "C_SQL": 3,
+            "C_ETHICS": 4,
+            "C_COMMUNICATION": 4
+          },
+          "duties": "Reviews industrial methodologies, validation frameworks, and quality controls.",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 4,
+          "id": "PDF_A04_L4"
+        },
+        {
+          "title": "Director / Senior Leadership",
+          "grade": 5,
+          "requirements": {
+            "C_INDUSTRIAL": 5,
+            "C_ETHICS": 5,
+            "C_COMMUNICATION": 5
+          },
+          "duties": "Provides strategic oversight for industrial and economic survey programmes.",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 4,
+          "id": "PDF_A04_L5"
+        },
+        {
+          "title": "Director General / Organization Head",
+          "grade": 6,
+          "requirements": {
+            "C_INDUSTRIAL": 6,
+            "C_ETHICS": 6,
+            "C_COMMUNICATION": 6
+          },
+          "duties": "Sets national industrial statistics standards and inter-agency priorities.",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 4,
+          "id": "PDF_A04_L6"
+        }
+      ],
+      "source_area": "MoSPI — Industrial Statistics",
+      "ministry_id": "MOSPI",
+      "ministry": "Ministry of Statistics & Programme Implementation (MoSPI)"
+    },
+    {
+      "id": "A05",
+      "name": "SDG, Metadata & Data Quality",
+      "roles": [
+        {
+          "title": "Junior Data / Statistical Officer",
+          "grade": 1,
+          "requirements": {
+            "C_SDG": 1,
+            "C_SQL": 1,
+            "C_ETHICS": 1,
+            "C_COMMUNICATION": 1
+          },
+          "duties": "Supports indicator mapping, data compilation, documentation, and basic",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 4,
+          "id": "PDF_A05_L1"
+        },
+        {
+          "title": "Statistical Officer",
+          "grade": 2,
+          "requirements": {
+            "C_SDG": 2,
+            "C_PYTHON": 1,
+            "C_SQL": 2,
+            "C_ETHICS": 2,
+            "C_COMMUNICATION": 2
+          },
+          "duties": "Populates indicator templates, validates datasets, and prepares routine",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 4,
+          "id": "PDF_A05_L2"
+        },
+        {
+          "title": "Assistant Director",
+          "grade": 3,
+          "requirements": {
+            "C_SDG": 3,
+            "C_PYTHON": 2,
+            "C_SQL": 3,
+            "C_ETHICS": 3,
+            "C_COMMUNICATION": 3
+          },
+          "duties": "Reviews indicator calculations, resolves data issues, and coordinates reporting",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 4,
+          "id": "PDF_A05_L3"
+        },
+        {
+          "title": "Deputy Director / Joint Director",
+          "grade": 4,
+          "requirements": {
+            "C_SDG": 4,
+            "C_PYTHON": 3,
+            "C_SQL": 3,
+            "C_ETHICS": 4,
+            "C_COMMUNICATION": 4
+          },
+          "duties": "Designs indicator monitoring workflows and oversees methodological",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 4,
+          "id": "PDF_A05_L4"
+        },
+        {
+          "title": "Director / Senior Leadership",
+          "grade": 5,
+          "requirements": {
+            "C_SDG": 5,
+            "C_ETHICS": 5,
+            "C_COMMUNICATION": 5
+          },
+          "duties": "Leads national SDG reporting coordination and stakeholder engagement.",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 4,
+          "id": "PDF_A05_L5"
+        },
+        {
+          "title": "Director General / Strategic Head",
+          "grade": 6,
+          "requirements": {
+            "C_SDG": 6,
+            "C_ETHICS": 6,
+            "C_COMMUNICATION": 6
+          },
+          "duties": "Sets governance direction for national SDG monitoring and high-level reporting.",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 4,
+          "id": "PDF_A05_L6"
+        }
+      ],
+      "source_area": "MoSPI — SDG, Metadata & Data Quality",
+      "ministry_id": "MOSPI",
+      "ministry": "Ministry of Statistics & Programme Implementation (MoSPI)"
+    },
+    {
+      "id": "A06",
+      "name": "Data Informatics, AI & Analytics",
+      "roles": [
+        {
+          "title": "Junior Data Analyst",
+          "grade": 1,
+          "requirements": {
+            "C_PYTHON": 1,
+            "C_SQL": 1,
+            "C_AI_ML": 1,
+            "C_CYBER": 1,
+            "C_ETHICS": 1,
+            "C_COMMUNICATION": 1
+          },
+          "duties": "Uses approved tools for basic data preparation, SQL queries, simple scripts, and",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 4,
+          "id": "PDF_A06_L1"
+        },
+        {
+          "title": "Data Analyst / Senior Officer",
+          "grade": 2,
+          "requirements": {
+            "C_PYTHON": 2,
+            "C_SQL": 2,
+            "C_AI_ML": 2,
+            "C_CYBER": 2,
+            "C_ETHICS": 2,
+            "C_COMMUNICATION": 2
+          },
+          "duties": "Builds reproducible scripts and queries and applies basic machine-learning",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 4,
+          "id": "PDF_A06_L2"
+        },
+        {
+          "title": "Technical Lead / Assistant Director",
+          "grade": 3,
+          "requirements": {
+            "C_PYTHON": 3,
+            "C_SQL": 3,
+            "C_AI_ML": 3,
+            "C_CYBER": 3,
+            "C_ETHICS": 3,
+            "C_COMMUNICATION": 3
+          },
+          "duties": "Develops analytical and ML solutions, reviews code, and addresses security and",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 4,
+          "id": "PDF_A06_L3"
+        },
+        {
+          "title": "Data / AI Manager",
+          "grade": 4,
+          "requirements": {
+            "C_PYTHON": 4,
+            "C_SQL": 4,
+            "C_AI_ML": 4,
+            "C_CYBER": 4,
+            "C_ETHICS": 4,
+            "C_COMMUNICATION": 4
+          },
+          "duties": "Reviews architectures and models, establishes controls, and supervises",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 4,
+          "id": "PDF_A06_L4"
+        },
+        {
+          "title": "Director / Digital & AI Lead",
+          "grade": 5,
+          "requirements": {
+            "C_PYTHON": 4,
+            "C_SQL": 4,
+            "C_AI_ML": 5,
+            "C_CYBER": 5,
+            "C_ETHICS": 5,
+            "C_COMMUNICATION": 5
+          },
+          "duties": "Leads AI strategy, cybersecurity governance, responsible AI standards, and",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 5,
+          "id": "PDF_A06_L5"
+        },
+        {
+          "title": "Chief / Director General",
+          "grade": 6,
+          "requirements": {
+            "C_AI_ML": 6,
+            "C_CYBER": 6,
+            "C_ETHICS": 6,
+            "C_COMMUNICATION": 6
+          },
+          "duties": "Defines enterprise-level digital, AI, security, and governance direction.",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 5,
+          "id": "PDF_A06_L6"
+        }
+      ],
+      "source_area": "MoSPI — Data Informatics, AI & Analytics",
+      "ministry_id": "MOSPI",
+      "ministry": "Ministry of Statistics & Programme Implementation (MoSPI)"
+    },
+    {
+      "id": "A07",
+      "name": "Agricultural Statistics",
+      "roles": [
+        {
+          "title": "Foundational Support Staff",
+          "grade": 1,
+          "requirements": {
+            "C_SURVEY": 1,
+            "C_AGRI": 1,
+            "C_PYTHON": 1,
+            "C_SQL": 1,
+            "C_ETHICS": 1,
+            "C_COMMUNICATION": 1
+          },
+          "duties": "Collects and checks agricultural returns and compiles preliminary tables.",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 3,
+          "id": "PDF_A07_L1"
+        },
+        {
+          "title": "Economic / Statistical Officer",
+          "grade": 2,
+          "requirements": {
+            "C_SURVEY": 2,
+            "C_AGRI": 2,
+            "C_PYTHON": 2,
+            "C_SQL": 2,
+            "C_ETHICS": 2,
+            "C_COMMUNICATION": 2
+          },
+          "duties": "Compiles crop and agricultural datasets and supports routine publications.",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 3,
+          "id": "PDF_A07_L2"
+        },
+        {
+          "title": "Senior Technical Officer",
+          "grade": 3,
+          "requirements": {
+            "C_SURVEY": 3,
+            "C_SAMPLING": 3,
+            "C_AGRI": 3,
+            "C_PYTHON": 2,
+            "C_SQL": 2,
+            "C_ETHICS": 3,
+            "C_COMMUNICATION": 3
+          },
+          "duties": "Analyses crop and production data, validates estimates, and prepares technical",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 3,
+          "id": "PDF_A07_L3"
+        },
+        {
+          "title": "Advanced Officer / Joint Director",
+          "grade": 4,
+          "requirements": {
+            "C_SURVEY": 4,
+            "C_SAMPLING": 4,
+            "C_AGRI": 4,
+            "C_PYTHON": 3,
+            "C_SQL": 3,
+            "C_ETHICS": 4,
+            "C_COMMUNICATION": 4
+          },
+          "duties": "Reviews estimation methodology, validates state outputs, and supervises",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 3,
+          "id": "PDF_A07_L4"
+        },
+        {
+          "title": "Adviser / Senior Leadership",
+          "grade": 5,
+          "requirements": {
+            "C_SURVEY": 5,
+            "C_SAMPLING": 5,
+            "C_AGRI": 5,
+            "C_ETHICS": 5,
+            "C_COMMUNICATION": 5
+          },
+          "duties": "Provides expert direction for agricultural statistics, estimation standards, and",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 4,
+          "id": "PDF_A07_L5"
+        },
+        {
+          "title": "Strategic Leader / Director General",
+          "grade": 6,
+          "requirements": {
+            "C_AGRI": 6,
+            "C_SURVEY": 5,
+            "C_SAMPLING": 5,
+            "C_ETHICS": 6,
+            "C_COMMUNICATION": 6
+          },
+          "duties": "Shapes national agricultural statistics policy and strategic coordination.",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 4,
+          "id": "PDF_A07_L6"
+        }
+      ],
+      "source_area": "Agriculture — Agricultural Statistics",
+      "ministry_id": "AGRICULTURE",
+      "ministry": "Ministry of Agriculture & Farmers Welfare (ES&E / DES)"
+    },
+    {
+      "id": "A08",
+      "name": "Cost of Cultivation",
+      "roles": [
+        {
+          "title": "Foundational Field Assistant",
+          "grade": 1,
+          "requirements": {
+            "C_SAMPLING": 1,
+            "C_AGRI": 1,
+            "C_DATA_QUALITY": 1,
+            "C_SQL": 1,
+            "C_DPDP": 1,
+            "C_COMMUNICATION": 1,
+            "C_ETHICS": 1
+          },
+          "duties": "Records input-output cost data from agricultural holdings under field supervision.",
+          "source": "All4one.pdf",
+          "page": 5,
+          "id": "PDF_A08_L1"
+        },
+        {
+          "title": "Economic / Statistical Officer",
+          "grade": 2,
+          "requirements": {
+            "C_SAMPLING": 2,
+            "C_AGRI": 2,
+            "C_DATA_QUALITY": 2,
+            "C_SQL": 2,
+            "C_STATA": 1,
+            "C_DPDP": 2,
+            "C_COMMUNICATION": 2,
+            "C_PROJECT_MGMT": 1,
+            "C_ETHICS": 2
+          },
+          "duties": "Processes farm-level cost survey data and compiles crop cost accounting schedules.",
+          "source": "All4one.pdf",
+          "page": 5,
+          "id": "PDF_A08_L2"
+        },
+        {
+          "title": "Senior Technical Officer",
+          "grade": 3,
+          "requirements": {
+            "C_SAMPLING": 3,
+            "C_AGRI": 3,
+            "C_METADATA": 2,
+            "C_DATA_QUALITY": 3,
+            "C_SQL": 3,
+            "C_STATA": 2,
+            "C_DATAVIZ": 2,
+            "C_DPDP": 2,
+            "C_COMMUNICATION": 3,
+            "C_PROJECT_MGMT": 3,
+            "C_ETHICS": 3,
+            "C_DECISION_MAKING": 2
+          },
+          "duties": "Reviews cost estimates, validates input data, and prepares analytical reports for senior review.",
+          "source": "All4one.pdf",
+          "page": 5,
+          "id": "PDF_A08_L3"
+        },
+        {
+          "title": "Advanced Officer / Joint Director",
+          "grade": 4,
+          "requirements": {
+            "C_SAMPLING": 4,
+            "C_AGRI": 4,
+            "C_METADATA": 3,
+            "C_DATA_QUALITY": 4,
+            "C_STATA": 3,
+            "C_DATAVIZ": 3,
+            "C_OPEN_DATA": 3,
+            "C_DPDP": 3,
+            "C_LEADERSHIP": 3,
+            "C_COMMUNICATION": 4,
+            "C_PROJECT_MGMT": 4,
+            "C_ETHICS": 4,
+            "C_DECISION_MAKING": 4,
+            "C_CHANGE_MGMT": 3
+          },
+          "duties": "Reviews valuation methodologies for farm inputs and oversees sample designs across agricultural blocks.",
+          "source": "All4one.pdf",
+          "page": 5,
+          "id": "PDF_A08_L4"
+        },
+        {
+          "title": "Adviser (CS)",
+          "grade": 5,
+          "requirements": {
+            "C_SAMPLING": 5,
+            "C_AGRI": 5,
+            "C_METADATA": 4,
+            "C_DATA_QUALITY": 5,
+            "C_OPEN_DATA": 4,
+            "C_DPDP": 4,
+            "C_LEADERSHIP": 5,
+            "C_COMMUNICATION": 5,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 5,
+            "C_DECISION_MAKING": 5,
+            "C_CHANGE_MGMT": 4
+          },
+          "duties": "Implements Comprehensive Scheme for Studying Cost of Cultivation for CACP/MSP pricing decisions.",
+          "source": "All4one.pdf",
+          "page": 6,
+          "id": "PDF_A08_L5"
+        },
+        {
+          "title": "Strategic Leader / Principal Adviser",
+          "grade": 6,
+          "requirements": {
+            "C_SAMPLING": 5,
+            "C_AGRI": 6,
+            "C_DATA_QUALITY": 5,
+            "C_DPDP": 5,
+            "C_LEADERSHIP": 6,
+            "C_COMMUNICATION": 6,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 6,
+            "C_DECISION_MAKING": 6,
+            "C_CHANGE_MGMT": 6
+          },
+          "duties": "Directs agricultural pricing statistics policy and aligns cost structures with national economic goals.",
+          "source": "All4one.pdf",
+          "page": 6,
+          "id": "PDF_A08_L6"
+        }
+      ],
+      "source_area": "Agriculture — Cost of Cultivation",
+      "ministry_id": "AGRICULTURE",
+      "ministry": "Ministry of Agriculture & Farmers Welfare (ES&E / DES)"
+    },
+    {
+      "id": "A09",
+      "name": "Land Use, GIS & Geospatial Analytics",
+      "roles": [
+        {
+          "title": "Technical Support Assistant",
+          "grade": 1,
+          "requirements": {
+            "C_AGRI": 1,
+            "C_GIS": 1,
+            "C_DATAVIZ": 1,
+            "C_DPDP": 1,
+            "C_COMMUNICATION": 1,
+            "C_ETHICS": 1
+          },
+          "duties": "Digitizes spatial boundaries and maintains raw land classification and crop",
+          "source": "All4one.pdf",
+          "page": 6,
+          "id": "PDF_A09_L1"
+        },
+        {
+          "title": "GIS / Data Analyst",
+          "grade": 2,
+          "requirements": {
+            "C_AGRI": 2,
+            "C_PYTHON": 1,
+            "C_SQL": 2,
+            "C_GIS": 2,
+            "C_DATAVIZ": 2,
+            "C_DPDP": 2,
+            "C_COMMUNICATION": 2,
+            "C_PROJECT_MGMT": 1,
+            "C_ETHICS": 2
+          },
+          "duties": "Processes satellite imagery and spatial data to produce land-use and crop-map overlays.",
+          "source": "All4one.pdf",
+          "page": 6,
+          "id": "PDF_A09_L2"
+        },
+        {
+          "title": "Senior GIS / Statistical Analyst",
+          "grade": 3,
+          "requirements": {
+            "C_AGRI": 3,
+            "C_DATA_QUALITY": 3,
+            "C_PYTHON": 2,
+            "C_SQL": 3,
+            "C_GIS": 3,
+            "C_DATAVIZ": 3,
+            "C_AI_ML": 1,
+            "C_APIS": 2,
+            "C_DPDP": 2,
+            "C_COMMUNICATION": 3,
+            "C_PROJECT_MGMT": 3,
+            "C_ETHICS": 3,
+            "C_DECISION_MAKING": 2
+          },
+          "duties": "Integrates spatial and statistical data, validates remote sensing outputs, and supports spatial analytics.",
+          "source": "All4one.pdf",
+          "page": 6,
+          "id": "PDF_A09_L3"
+        },
+        {
+          "title": "Advanced GIS / Joint Director",
+          "grade": 4,
+          "requirements": {
+            "C_AGRI": 4,
+            "C_DATA_QUALITY": 4,
+            "C_GIS": 4,
+            "C_DATAVIZ": 4,
+            "C_AI_ML": 2,
+            "C_CLOUD": 2,
+            "C_APIS": 3,
+            "C_OPEN_DATA": 3,
+            "C_DPDP": 3,
+            "C_LEADERSHIP": 3,
+            "C_COMMUNICATION": 4,
+            "C_PROJECT_MGMT": 4,
+            "C_ETHICS": 4,
+            "C_DECISION_MAKING": 4,
+            "C_CHANGE_MGMT": 3
+          },
+          "duties": "Manages spatial data pipelines, reviews remote sensing algorithms, and oversees crop monitoring systems.",
+          "source": "All4one.pdf",
+          "page": 6,
+          "id": "PDF_A09_L4"
+        },
+        {
+          "title": "Adviser (SDDS)",
+          "grade": 5,
+          "requirements": {
+            "C_AGRI": 5,
+            "C_DATA_QUALITY": 5,
+            "C_GIS": 5,
+            "C_DATAVIZ": 4,
+            "C_OPEN_DATA": 4,
+            "C_DPDP": 4,
+            "C_DPI": 4,
+            "C_LEADERSHIP": 5,
+            "C_COMMUNICATION": 5,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 5,
+            "C_DECISION_MAKING": 5,
+            "C_CHANGE_MGMT": 4
+          },
+          "duties": "Oversees compilation of nine-fold land classification, irrigated area, and crop spatial publications.",
+          "source": "All4one.pdf",
+          "page": 6,
+          "id": "PDF_A09_L5"
+        },
+        {
+          "title": "Strategic Leader / Director General",
+          "grade": 6,
+          "requirements": {
+            "C_AGRI": 6,
+            "C_DATA_QUALITY": 5,
+            "C_GIS": 5,
+            "C_DPDP": 5,
+            "C_DPI": 5,
+            "C_LEADERSHIP": 6,
+            "C_COMMUNICATION": 6,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 6,
+            "C_DECISION_MAKING": 6,
+            "C_CHANGE_MGMT": 6
+          },
+          "duties": "Shapes national agricultural geospatial policy and drives integration of satellite technology in governance.",
+          "source": "All4one.pdf",
+          "page": 6,
+          "id": "PDF_A09_L6"
+        }
+      ],
+      "source_area": "Agriculture — Land Use, GIS & Geospatial",
+      "ministry_id": "AGRICULTURE",
+      "ministry": "Ministry of Agriculture & Farmers Welfare (ES&E / DES)"
+    },
+    {
+      "id": "A10",
+      "name": "Agricultural Prices & Market Intelligence",
+      "roles": [
+        {
+          "title": "Primary Data Collector",
+          "grade": 1,
+          "requirements": {
+            "C_PRICE": 1,
+            "C_AGRI": 1,
+            "C_DATA_QUALITY": 1,
+            "C_SQL": 1,
+            "C_DPDP": 1,
+            "C_COMMUNICATION": 1,
+            "C_ETHICS": 1
+          },
+          "duties": "Collects daily agricultural market rates, retail prices, and mandis price schedules.",
+          "source": "All4one.pdf",
+          "page": 6,
+          "id": "PDF_A10_L1"
+        },
+        {
+          "title": "Economic / Statistical Officer",
+          "grade": 2,
+          "requirements": {
+            "C_PRICE": 2,
+            "C_AGRI": 2,
+            "C_DATA_QUALITY": 2,
+            "C_SQL": 2,
+            "C_DATAVIZ": 2,
+            "C_DPDP": 2,
+            "C_COMMUNICATION": 2,
+            "C_PROJECT_MGMT": 1,
+            "C_ETHICS": 2
+          },
+          "duties": "Verifies market price streams, compiles wholesale/retail datasets, and generates daily summaries.",
+          "source": "All4one.pdf",
+          "page": 6,
+          "id": "PDF_A10_L2"
+        },
+        {
+          "title": "Senior Analyst",
+          "grade": 3,
+          "requirements": {
+            "C_PRICE": 3,
+            "C_AGRI": 3,
+            "C_METADATA": 2,
+            "C_DATA_QUALITY": 3,
+            "C_PYTHON": 2,
+            "C_SQL": 3,
+            "C_DATAVIZ": 3,
+            "C_DPDP": 2,
+            "C_COMMUNICATION": 3,
+            "C_PROJECT_MGMT": 3,
+            "C_ETHICS": 3,
+            "C_DECISION_MAKING": 2
+          },
+          "duties": "Analyses commodity price trends, identifies price spikes, and prepares market intelligence reports.",
+          "source": "All4one.pdf",
+          "page": 6,
+          "id": "PDF_A10_L3"
+        },
+        {
+          "title": "Advanced Officer / Joint Director",
+          "grade": 4,
+          "requirements": {
+            "C_PRICE": 4,
+            "C_AGRI": 4,
+            "C_METADATA": 3,
+            "C_DATA_QUALITY": 4,
+            "C_DATAVIZ": 3,
+            "C_OPEN_DATA": 3,
+            "C_DPDP": 3,
+            "C_LEADERSHIP": 3,
+            "C_COMMUNICATION": 4,
+            "C_PROJECT_MGMT": 4,
+            "C_ETHICS": 4,
+            "C_DECISION_MAKING": 4,
+            "C_CHANGE_MGMT": 3
+          },
+          "duties": "Reviews market intelligence gathering frameworks and oversees price forecasting models.",
+          "source": "All4one.pdf",
+          "page": 6,
+          "id": "PDF_A10_L4"
+        },
+        {
+          "title": "Adviser (P&M;)",
+          "grade": 5,
+          "requirements": {
+            "C_PRICE": 5,
+            "C_AGRI": 5,
+            "C_METADATA": 4,
+            "C_DATA_QUALITY": 5,
+            "C_OPEN_DATA": 4,
+            "C_DPDP": 4,
+            "C_LEADERSHIP": 5,
+            "C_COMMUNICATION": 5,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 5,
+            "C_DECISION_MAKING": 5,
+            "C_CHANGE_MGMT": 4
+          },
+          "duties": "Provides market intelligence on farm-harvest, domestic, and international commodity prices.",
+          "source": "All4one.pdf",
+          "page": 6,
+          "id": "PDF_A10_L5"
+        },
+        {
+          "title": "Strategic Leader / Principal Adviser",
+          "grade": 6,
+          "requirements": {
+            "C_PRICE": 6,
+            "C_AGRI": 5,
+            "C_DATA_QUALITY": 5,
+            "C_DPDP": 5,
+            "C_LEADERSHIP": 6,
+            "C_COMMUNICATION": 6,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 6,
+            "C_DECISION_MAKING": 6,
+            "C_CHANGE_MGMT": 6
+          },
+          "duties": "Advises government on agricultural trade policy, import duties, and market stabilization.",
+          "source": "All4one.pdf",
+          "page": 6,
+          "id": "PDF_A10_L6"
+        }
+      ],
+      "source_area": "Agriculture — Agri Prices & Market Intelligence",
+      "ministry_id": "AGRICULTURE",
+      "ministry": "Ministry of Agriculture & Farmers Welfare (ES&E / DES)"
+    },
+    {
+      "id": "A11",
+      "name": "Labour & Employment Statistics",
+      "roles": [
+        {
+          "title": "Field Investigator / Support Staff",
+          "grade": 1,
+          "requirements": {
+            "C_SURVEY": 1,
+            "C_LABOUR": 1,
+            "C_SQL": 1,
+            "C_ETHICS": 1,
+            "C_COMMUNICATION": 1
+          },
+          "duties": "Administers labour schedules, checks completeness, and follows approved",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 3,
+          "id": "PDF_A11_L1"
+        },
+        {
+          "title": "Statistical / Labour Officer",
+          "grade": 2,
+          "requirements": {
+            "C_SURVEY": 2,
+            "C_LABOUR": 2,
+            "C_PYTHON": 1,
+            "C_SQL": 2,
+            "C_ETHICS": 2,
+            "C_COMMUNICATION": 2
+          },
+          "duties": "Processes labour datasets, performs routine validation, and prepares standard",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 3,
+          "id": "PDF_A11_L2"
+        },
+        {
+          "title": "Deputy Director / Analyst",
+          "grade": 3,
+          "requirements": {
+            "C_SURVEY": 3,
+            "C_SAMPLING": 2,
+            "C_LABOUR": 3,
+            "C_PYTHON": 2,
+            "C_SQL": 3,
+            "C_ETHICS": 3,
+            "C_COMMUNICATION": 3
+          },
+          "duties": "Analyses labour indicators, supervises processing, and drafts technical reports.",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 3,
+          "id": "PDF_A11_L3"
+        },
+        {
+          "title": "Director / Joint Director",
+          "grade": 4,
+          "requirements": {
+            "C_SURVEY": 4,
+            "C_SAMPLING": 4,
+            "C_LABOUR": 4,
+            "C_PYTHON": 3,
+            "C_SQL": 3,
+            "C_ETHICS": 4,
+            "C_COMMUNICATION": 4
+          },
+          "duties": "Designs enquiries and sample approaches, reviews outputs, and manages",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 3,
+          "id": "PDF_A11_L4"
+        },
+        {
+          "title": "Deputy Director General",
+          "grade": 5,
+          "requirements": {
+            "C_LABOUR": 5,
+            "C_SURVEY": 5,
+            "C_SAMPLING": 4,
+            "C_ETHICS": 5,
+            "C_COMMUNICATION": 5
+          },
+          "duties": "Provides technical leadership for labour statistics programmes and stakeholder",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 3,
+          "id": "PDF_A11_L5"
+        },
+        {
+          "title": "Director General",
+          "grade": 6,
+          "requirements": {
+            "C_LABOUR": 6,
+            "C_SURVEY": 5,
+            "C_ETHICS": 6,
+            "C_COMMUNICATION": 6
+          },
+          "duties": "Sets strategic direction and governance for labour statistics and employment",
+          "source": "Filtered_Competency_Role_Depth_Matrix_Page6_Removed.pdf",
+          "page": 3,
+          "id": "PDF_A11_L6"
+        }
+      ],
+      "source_area": "Labour — Labour & Employment Statistics",
+      "ministry_id": "LABOUR",
+      "ministry": "Ministry of Labour & Employment (Labour Bureau)"
+    },
+    {
+      "id": "A12",
+      "name": "Price & Index Statistics",
+      "roles": [
+        {
+          "title": "Price Collector",
+          "grade": 1,
+          "requirements": {
+            "C_PRICE": 1,
+            "C_DATA_QUALITY": 1,
+            "C_DPDP": 1,
+            "C_COMMUNICATION": 1,
+            "C_ETHICS": 1
+          },
+          "duties": "Collects market price information from assigned urban/rural centers per",
+          "source": "All4one.pdf",
+          "page": 7,
+          "id": "PDF_A12_L1"
+        },
+        {
+          "title": "Price Supervisor / Assistant Director",
+          "grade": 2,
+          "requirements": {
+            "C_PRICE": 2,
+            "C_DATA_QUALITY": 2,
+            "C_SQL": 2,
+            "C_DPDP": 2,
+            "C_COMMUNICATION": 2,
+            "C_PROJECT_MGMT": 1,
+            "C_ETHICS": 2
+          },
+          "duties": "Supervises price collection, conducts field audits, and assists in CPI compilation.",
+          "source": "All4one.pdf",
+          "page": 7,
+          "id": "PDF_A12_L2"
+        },
+        {
+          "title": "Deputy Director",
+          "grade": 3,
+          "requirements": {
+            "C_PRICE": 3,
+            "C_METADATA": 2,
+            "C_DATA_QUALITY": 3,
+            "C_PYTHON": 2,
+            "C_SQL": 3,
+            "C_DATAVIZ": 2,
+            "C_DPDP": 2,
+            "C_COMMUNICATION": 3,
+            "C_PROJECT_MGMT": 3,
+            "C_ETHICS": 3,
+            "C_DECISION_MAKING": 2
+          },
+          "duties": "Analyses price data, processes CPI-IW / CPI-AL indices, and supervises quality controls.",
+          "source": "All4one.pdf",
+          "page": 7,
+          "id": "PDF_A12_L3"
+        },
+        {
+          "title": "Director / Joint Director",
+          "grade": 4,
+          "requirements": {
+            "C_PRICE": 4,
+            "C_METADATA": 3,
+            "C_DATA_QUALITY": 4,
+            "C_DATAVIZ": 3,
+            "C_OPEN_DATA": 3,
+            "C_DPDP": 3,
+            "C_LEADERSHIP": 3,
+            "C_COMMUNICATION": 4,
+            "C_PROJECT_MGMT": 4,
+            "C_ETHICS": 4,
+            "C_DECISION_MAKING": 4,
+            "C_CHANGE_MGMT": 3
+          },
+          "duties": "Plans CPI base revisions, designs weighting diagrams, and supervises processing.",
+          "source": "All4one.pdf",
+          "page": 7,
+          "id": "PDF_A12_L4"
+        },
+        {
+          "title": "Deputy Director General",
+          "grade": 5,
+          "requirements": {
+            "C_PRICE": 5,
+            "C_METADATA": 4,
+            "C_DATA_QUALITY": 5,
+            "C_OPEN_DATA": 4,
+            "C_DPDP": 4,
+            "C_LEADERSHIP": 5,
+            "C_COMMUNICATION": 5,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 5,
+            "C_DECISION_MAKING": 5,
+            "C_CHANGE_MGMT": 4
+          },
+          "duties": "Provides high-level direction for consumer price indices and represents Bureau on index committees.",
+          "source": "All4one.pdf",
+          "page": 7,
+          "id": "PDF_A12_L5"
+        },
+        {
+          "title": "Director General",
+          "grade": 6,
+          "requirements": {
+            "C_PRICE": 6,
+            "C_DATA_QUALITY": 5,
+            "C_DPDP": 5,
+            "C_LEADERSHIP": 6,
+            "C_COMMUNICATION": 6,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 6,
+            "C_DECISION_MAKING": 6,
+            "C_CHANGE_MGMT": 6
+          },
+          "duties": "Sets national policy on labour price indices and coordinates release with central agencies.",
+          "source": "All4one.pdf",
+          "page": 7,
+          "id": "PDF_A12_L6"
+        }
+      ],
+      "source_area": "Labour — Price & Index Statistics",
+      "ministry_id": "LABOUR",
+      "ministry": "Ministry of Labour & Employment (Labour Bureau)"
+    },
+    {
+      "id": "A13",
+      "name": "Labour Surveys, Research & Analytics",
+      "roles": [
+        {
+          "title": "Research Assistant / Support Staff",
+          "grade": 1,
+          "requirements": {
+            "C_SURVEY": 1,
+            "C_LABOUR": 1,
+            "C_DATA_QUALITY": 1,
+            "C_SQL": 1,
+            "C_DPDP": 1,
+            "C_COMMUNICATION": 1,
+            "C_ETHICS": 1
+          },
+          "duties": "Supports enquiry schedule testing, data entry, and basic verification for research projects.",
+          "source": "All4one.pdf",
+          "page": 7,
+          "id": "PDF_A13_L1"
+        },
+        {
+          "title": "Assistant Director",
+          "grade": 2,
+          "requirements": {
+            "C_SURVEY": 2,
+            "C_LABOUR": 2,
+            "C_DATA_QUALITY": 2,
+            "C_SQL": 2,
+            "C_SPSS": 2,
+            "C_DPDP": 2,
+            "C_COMMUNICATION": 2,
+            "C_PROJECT_MGMT": 2,
+            "C_ETHICS": 2
+          },
+          "duties": "Supports scheme implementation, oversees preliminary data tabulation, and assists technical head.",
+          "source": "All4one.pdf",
+          "page": 7,
+          "id": "PDF_A13_L2"
+        },
+        {
+          "title": "Deputy Director",
+          "grade": 3,
+          "requirements": {
+            "C_SURVEY": 3,
+            "C_LABOUR": 3,
+            "C_METADATA": 2,
+            "C_DATA_QUALITY": 3,
+            "C_PYTHON": 2,
+            "C_SQL": 3,
+            "C_SPSS": 2,
+            "C_DATAVIZ": 3,
+            "C_DPDP": 2,
+            "C_COMMUNICATION": 3,
+            "C_PROJECT_MGMT": 3,
+            "C_ETHICS": 3,
+            "C_DECISION_MAKING": 2
+          },
+          "duties": "Analyses survey results, supervises data processing, and drafts technical reports.",
+          "source": "All4one.pdf",
+          "page": 7,
+          "id": "PDF_A13_L3"
+        },
+        {
+          "title": "Director / Joint Director",
+          "grade": 4,
+          "requirements": {
+            "C_SURVEY": 4,
+            "C_SAMPLING": 4,
+            "C_LABOUR": 4,
+            "C_METADATA": 3,
+            "C_DATA_QUALITY": 4,
+            "C_DATAVIZ": 3,
+            "C_OPEN_DATA": 3,
+            "C_DPDP": 3,
+            "C_LEADERSHIP": 3,
+            "C_COMMUNICATION": 4,
+            "C_PROJECT_MGMT": 4,
+            "C_ETHICS": 4,
+            "C_DECISION_MAKING": 4,
+            "C_CHANGE_MGMT": 3
+          },
+          "duties": "Formulates sample designs, enquiry schedules, data processing logic, and final survey reports.",
+          "source": "All4one.pdf",
+          "page": 7,
+          "id": "PDF_A13_L4"
+        },
+        {
+          "title": "Deputy Director General",
+          "grade": 5,
+          "requirements": {
+            "C_SURVEY": 5,
+            "C_LABOUR": 5,
+            "C_METADATA": 4,
+            "C_DATA_QUALITY": 5,
+            "C_OPEN_DATA": 4,
+            "C_DPDP": 4,
+            "C_LEADERSHIP": 5,
+            "C_COMMUNICATION": 5,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 5,
+            "C_DECISION_MAKING": 5,
+            "C_CHANGE_MGMT": 4
+          },
+          "duties": "Coordinates survey planning with central ministries and provides multi-disciplinary leadership.",
+          "source": "All4one.pdf",
+          "page": 7,
+          "id": "PDF_A13_L5"
+        },
+        {
+          "title": "Director General",
+          "grade": 6,
+          "requirements": {
+            "C_SURVEY": 5,
+            "C_LABOUR": 6,
+            "C_DATA_QUALITY": 5,
+            "C_DPDP": 5,
+            "C_LEADERSHIP": 6,
+            "C_COMMUNICATION": 6,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 6,
+            "C_DECISION_MAKING": 6,
+            "C_CHANGE_MGMT": 6
+          },
+          "duties": "Directs national enterprise and employment survey strategy and policy research.",
+          "source": "All4one.pdf",
+          "page": 7,
+          "id": "PDF_A13_L6"
+        }
+      ],
+      "source_area": "Labour — Labour Surveys, Research & Analytics",
+      "ministry_id": "LABOUR",
+      "ministry": "Ministry of Labour & Employment (Labour Bureau)"
+    },
+    {
+      "id": "A14",
+      "name": "Training, Data Quality & Digitization",
+      "roles": [
+        {
+          "title": "Technical Support Staff",
+          "grade": 1,
+          "requirements": {
+            "C_DATA_QUALITY": 1,
+            "C_DATAVIZ": 1,
+            "C_OPEN_DATA": 1,
+            "C_DPDP": 1,
+            "C_DIGITAL_SIGNATURES": 1,
+            "C_COMMUNICATION": 1,
+            "C_ETHICS": 1
+          },
+          "duties": "Assists in executing digital data collection applications and user support.",
+          "source": "All4one.pdf",
+          "page": 8,
+          "id": "PDF_A14_L1"
+        },
+        {
+          "title": "Assistant Director",
+          "grade": 2,
+          "requirements": {
+            "C_DATA_QUALITY": 2,
+            "C_SQL": 2,
+            "C_DATAVIZ": 2,
+            "C_OPEN_DATA": 2,
+            "C_DPDP": 2,
+            "C_DIGITAL_SIGNATURES": 2,
+            "C_COMMUNICATION": 2,
+            "C_PROJECT_MGMT": 2,
+            "C_ETHICS": 2
+          },
+          "duties": "Supports rollout of digital tools, field training programs, and data validation rules.",
+          "source": "All4one.pdf",
+          "page": 8,
+          "id": "PDF_A14_L2"
+        },
+        {
+          "title": "Deputy Director",
+          "grade": 3,
+          "requirements": {
+            "C_DATA_QUALITY": 3,
+            "C_PYTHON": 2,
+            "C_SQL": 3,
+            "C_DATAVIZ": 3,
+            "C_APIS": 2,
+            "C_OPEN_DATA": 2,
+            "C_DPDP": 3,
+            "C_DIGITAL_SIGNATURES": 2,
+            "C_COMMUNICATION": 3,
+            "C_PROJECT_MGMT": 3,
+            "C_ETHICS": 3,
+            "C_DECISION_MAKING": 2
+          },
+          "duties": "Supervises data processing pipelines, executes quality control checks, and conducts staff training.",
+          "source": "All4one.pdf",
+          "page": 8,
+          "id": "PDF_A14_L3"
+        },
+        {
+          "title": "Director / Joint Director",
+          "grade": 4,
+          "requirements": {
+            "C_DATA_QUALITY": 4,
+            "C_DATAVIZ": 4,
+            "C_APIS": 3,
+            "C_OPEN_DATA": 3,
+            "C_CYBER": 3,
+            "C_DPDP": 4,
+            "C_GOV_CLOUD": 3,
+            "C_LEADERSHIP": 3,
+            "C_COMMUNICATION": 4,
+            "C_PROJECT_MGMT": 4,
+            "C_ETHICS": 4,
+            "C_DECISION_MAKING": 4,
+            "C_CHANGE_MGMT": 3
+          },
+          "duties": "Coordinates IT systems training, designs automated quality frameworks, and oversees digital platforms.",
+          "source": "All4one.pdf",
+          "page": 8,
+          "id": "PDF_A14_L4"
+        },
+        {
+          "title": "Deputy Director General",
+          "grade": 5,
+          "requirements": {
+            "C_DATA_QUALITY": 5,
+            "C_CLOUD": 4,
+            "C_OPEN_DATA": 4,
+            "C_CYBER": 4,
+            "C_DPDP": 4,
+            "C_GOV_CLOUD": 4,
+            "C_DPI": 4,
+            "C_LEADERSHIP": 5,
+            "C_COMMUNICATION": 5,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 5,
+            "C_DECISION_MAKING": 5,
+            "C_CHANGE_MGMT": 4
+          },
+          "duties": "Oversees digital transformation, IT governance, and capacity-building architecture.",
+          "source": "All4one.pdf",
+          "page": 8,
+          "id": "PDF_A14_L5"
+        },
+        {
+          "title": "Director General",
+          "grade": 6,
+          "requirements": {
+            "C_DATA_QUALITY": 6,
+            "C_CYBER": 5,
+            "C_DPDP": 5,
+            "C_GOV_CLOUD": 5,
+            "C_DPI": 5,
+            "C_LEADERSHIP": 6,
+            "C_COMMUNICATION": 6,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 6,
+            "C_DECISION_MAKING": 6,
+            "C_CHANGE_MGMT": 6
+          },
+          "duties": "Drives overall digital governance, modernization, and capacity-building policies.",
+          "source": "All4one.pdf",
+          "page": 8,
+          "id": "PDF_A14_L6"
+        }
+      ],
+      "source_area": "Labour — Training, Data Quality & Digitization",
+      "ministry_id": "LABOUR",
+      "ministry": "Ministry of Labour & Employment (Labour Bureau)"
+    },
+    {
+      "id": "A15",
+      "name": "Trade Statistics",
+      "roles": [
+        {
+          "title": "Data Support Staff",
+          "grade": 1,
+          "requirements": {
+            "C_PRICE": 1,
+            "C_INDUSTRIAL": 1,
+            "C_DATA_QUALITY": 1,
+            "C_SQL": 1,
+            "C_DPDP": 1,
+            "C_COMMUNICATION": 1,
+            "C_ETHICS": 1
+          },
+          "duties": "Ingests daily customs trade files, checks data structures, and prepares working tables.",
+          "source": "All4one.pdf",
+          "page": 8,
+          "id": "PDF_A15_L1"
+        },
+        {
+          "title": "Statistical / Data Officer",
+          "grade": 2,
+          "requirements": {
+            "C_PRICE": 2,
+            "C_INDUSTRIAL": 2,
+            "C_DATA_QUALITY": 2,
+            "C_SQL": 2,
+            "C_DATAVIZ": 2,
+            "C_DPDP": 2,
+            "C_DIGITAL_SIGNATURES": 2,
+            "C_COMMUNICATION": 2,
+            "C_PROJECT_MGMT": 1,
+            "C_ETHICS": 2
+          },
+          "duties": "Processes foreign trade data, validates Harmonized System (HS) codes, and runs quality checks.",
+          "source": "All4one.pdf",
+          "page": 8,
+          "id": "PDF_A15_L2"
+        },
+        {
+          "title": "Senior Technical / Statistical Officer",
+          "grade": 3,
+          "requirements": {
+            "C_PRICE": 3,
+            "C_INDUSTRIAL": 3,
+            "C_METADATA": 2,
+            "C_DATA_QUALITY": 3,
+            "C_PYTHON": 2,
+            "C_SQL": 3,
+            "C_DATAVIZ": 3,
+            "C_DPDP": 2,
+            "C_COMMUNICATION": 3,
+            "C_PROJECT_MGMT": 3,
+            "C_ETHICS": 3,
+            "C_DECISION_MAKING": 2
+          },
+          "duties": "Analyses trade balance datasets, resolves commodity classification anomalies, and reviews reports.",
+          "source": "All4one.pdf",
+          "page": 8,
+          "id": "PDF_A15_L3"
+        },
+        {
+          "title": "Advanced Officer / Joint Director",
+          "grade": 4,
+          "requirements": {
+            "C_PRICE": 4,
+            "C_INDUSTRIAL": 4,
+            "C_METADATA": 3,
+            "C_DATA_QUALITY": 4,
+            "C_DATAVIZ": 3,
+            "C_OPEN_DATA": 3,
+            "C_DPDP": 3,
+            "C_LEADERSHIP": 3,
+            "C_COMMUNICATION": 4,
+            "C_PROJECT_MGMT": 4,
+            "C_ETHICS": 4,
+            "C_DECISION_MAKING": 4,
+            "C_CHANGE_MGMT": 3
+          },
+          "duties": "Reviews foreign trade statistics methodology, concordance tables, and validation systems.",
+          "source": "All4one.pdf",
+          "page": 8,
+          "id": "PDF_A15_L4"
+        },
+        {
+          "title": "Director / Senior Functional Head",
+          "grade": 5,
+          "requirements": {
+            "C_PRICE": 5,
+            "C_INDUSTRIAL": 5,
+            "C_METADATA": 4,
+            "C_DATA_QUALITY": 5,
+            "C_OPEN_DATA": 4,
+            "C_DPDP": 4,
+            "C_DPI": 4,
+            "C_LEADERSHIP": 5,
+            "C_COMMUNICATION": 5,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 5,
+            "C_DECISION_MAKING": 5,
+            "C_CHANGE_MGMT": 4
+          },
+          "duties": "Provides programme-level oversight of trade data compilation and international reporting.",
+          "source": "All4one.pdf",
+          "page": 8,
+          "id": "PDF_A15_L5"
+        },
+        {
+          "title": "Director General",
+          "grade": 6,
+          "requirements": {
+            "C_PRICE": 5,
+            "C_INDUSTRIAL": 6,
+            "C_DATA_QUALITY": 5,
+            "C_DPDP": 5,
+            "C_DPI": 5,
+            "C_LEADERSHIP": 6,
+            "C_COMMUNICATION": 6,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 6,
+            "C_DECISION_MAKING": 6,
+            "C_CHANGE_MGMT": 6
+          },
+          "duties": "Heads DGCI&S;, directing foreign trade data collection, compilation, and dissemination policy.",
+          "source": "All4one.pdf",
+          "page": 8,
+          "id": "PDF_A15_L6"
+        }
+      ],
+      "source_area": "Commerce — Trade Statistics",
+      "ministry_id": "COMMERCE",
+      "ministry": "Ministry of Commerce & Industry (Department of Commerce / DGCI&S)"
+    },
+    {
+      "id": "A16",
+      "name": "Export-Import Data & Commercial Intelligence",
+      "roles": [
+        {
+          "title": "Data Processing Support",
+          "grade": 1,
+          "requirements": {
+            "C_PRICE": 1,
+            "C_INDUSTRIAL": 1,
+            "C_DATA_QUALITY": 1,
+            "C_SQL": 1,
+            "C_DPDP": 1,
+            "C_COMMUNICATION": 1,
+            "C_ETHICS": 1
+          },
+          "duties": "Supports basic EXIM data cleaning, country-wise record mapping, and batch processing.",
+          "source": "All4one.pdf",
+          "page": 8,
+          "id": "PDF_A16_L1"
+        },
+        {
+          "title": "Data / Statistical Officer",
+          "grade": 2,
+          "requirements": {
+            "C_PRICE": 2,
+            "C_INDUSTRIAL": 2,
+            "C_DATA_QUALITY": 2,
+            "C_PYTHON": 1,
+            "C_SQL": 2,
+            "C_DATAVIZ": 2,
+            "C_DPDP": 2,
+            "C_COMMUNICATION": 2,
+            "C_PROJECT_MGMT": 1,
+            "C_ETHICS": 2
+          },
+          "duties": "Extracts EXIM statistics via SQL, prepares port-wise tables, and verifies shipping metrics.",
+          "source": "All4one.pdf",
+          "page": 8,
+          "id": "PDF_A16_L2"
+        },
+        {
+          "title": "Senior Technical Analyst",
+          "grade": 3,
+          "requirements": {
+            "C_PRICE": 3,
+            "C_INDUSTRIAL": 3,
+            "C_METADATA": 2,
+            "C_DATA_QUALITY": 3,
+            "C_PYTHON": 2,
+            "C_SQL": 3,
+            "C_DATAVIZ": 3,
+            "C_OPEN_DATA": 2,
+            "C_DPDP": 2,
+            "C_COMMUNICATION": 3,
+            "C_PROJECT_MGMT": 3,
+            "C_ETHICS": 3,
+            "C_DECISION_MAKING": 2
+          },
+          "duties": "Analyses trade pattern shifts, market dependencies, and produces commercial intelligence inputs.",
+          "source": "All4one.pdf",
+          "page": 8,
+          "id": "PDF_A16_L3"
+        },
+        {
+          "title": "Advanced Analyst / Joint Director",
+          "grade": 4,
+          "requirements": {
+            "C_PRICE": 4,
+            "C_INDUSTRIAL": 4,
+            "C_METADATA": 3,
+            "C_DATA_QUALITY": 4,
+            "C_DATAVIZ": 3,
+            "C_AI_ML": 2,
+            "C_OPEN_DATA": 3,
+            "C_DPDP": 3,
+            "C_LEADERSHIP": 3,
+            "C_COMMUNICATION": 4,
+            "C_PROJECT_MGMT": 4,
+            "C_ETHICS": 4,
+            "C_DECISION_MAKING": 4,
+            "C_CHANGE_MGMT": 3
+          },
+          "duties": "Manages commercial intelligence analytics models, trade forecasting, and exporter profiles.",
+          "source": "All4one.pdf",
+          "page": 8,
+          "id": "PDF_A16_L4"
+        },
+        {
+          "title": "Senior Functional Head",
+          "grade": 5,
+          "requirements": {
+            "C_PRICE": 5,
+            "C_INDUSTRIAL": 5,
+            "C_METADATA": 4,
+            "C_DATA_QUALITY": 5,
+            "C_OPEN_DATA": 4,
+            "C_DPDP": 4,
+            "C_DPI": 4,
+            "C_LEADERSHIP": 5,
+            "C_COMMUNICATION": 5,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 5,
+            "C_DECISION_MAKING": 5,
+            "C_CHANGE_MGMT": 4
+          },
+          "duties": "Oversees EXIM commercial intelligence products for Ministry, trade bodies, and researchers.",
+          "source": "All4one.pdf",
+          "page": 9,
+          "id": "PDF_A16_L5"
+        },
+        {
+          "title": "Director General",
+          "grade": 6,
+          "requirements": {
+            "C_PRICE": 5,
+            "C_INDUSTRIAL": 6,
+            "C_DATA_QUALITY": 5,
+            "C_DPDP": 5,
+            "C_DPI": 5,
+            "C_LEADERSHIP": 6,
+            "C_COMMUNICATION": 6,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 6,
+            "C_DECISION_MAKING": 6,
+            "C_CHANGE_MGMT": 6
+          },
+          "duties": "Leads strategic commercial intelligence direction and bilateral trade data exchange agreements.",
+          "source": "All4one.pdf",
+          "page": 9,
+          "id": "PDF_A16_L6"
+        }
+      ],
+      "source_area": "Commerce — EXIM Data & Commercial Intelligence",
+      "ministry_id": "COMMERCE",
+      "ministry": "Ministry of Commerce & Industry (Department of Commerce / DGCI&S)"
+    },
+    {
+      "id": "A17",
+      "name": "Open Data, APIs & Data Processing",
+      "roles": [
+        {
+          "title": "Junior Technical Assistant",
+          "grade": 1,
+          "requirements": {
+            "C_DATA_QUALITY": 1,
+            "C_SQL": 1,
+            "C_DATAVIZ": 1,
+            "C_APIS": 1,
+            "C_OPEN_DATA": 1,
+            "C_DPDP": 1,
+            "C_DIGITAL_SIGNATURES": 1,
+            "C_COMMUNICATION": 1,
+            "C_ETHICS": 1
+          },
+          "duties": "Prepares public trade datasets for publishing and executes routine data exchange scripts.",
+          "source": "All4one.pdf",
+          "page": 9,
+          "id": "PDF_A17_L1"
+        },
+        {
+          "title": "Data Officer / Developer",
+          "grade": 2,
+          "requirements": {
+            "C_DATA_QUALITY": 2,
+            "C_PYTHON": 2,
+            "C_SQL": 2,
+            "C_DATAVIZ": 2,
+            "C_APIS": 2,
+            "C_OPEN_DATA": 2,
+            "C_DPDP": 2,
+            "C_DIGITAL_SIGNATURES": 2,
+            "C_COMMUNICATION": 2,
+            "C_PROJECT_MGMT": 1,
+            "C_ETHICS": 2
+          },
+          "duties": "Builds SQL extracts, maintains REST APIs, and validates open data publishing feeds.",
+          "source": "All4one.pdf",
+          "page": 9,
+          "id": "PDF_A17_L2"
+        },
+        {
+          "title": "Technical Lead",
+          "grade": 3,
+          "requirements": {
+            "C_DATA_QUALITY": 3,
+            "C_PYTHON": 3,
+            "C_SQL": 3,
+            "C_DATAVIZ": 3,
+            "C_CLOUD": 2,
+            "C_APIS": 3,
+            "C_OPEN_DATA": 3,
+            "C_CYBER": 2,
+            "C_DPDP": 3,
+            "C_GOV_CLOUD": 2,
+            "C_COMMUNICATION": 3,
+            "C_PROJECT_MGMT": 3,
+            "C_ETHICS": 3,
+            "C_DECISION_MAKING": 2
+          },
+          "duties": "Reviews API pipelines, enforces data security controls, and manages open data architecture.",
+          "source": "All4one.pdf",
+          "page": 9,
+          "id": "PDF_A17_L3"
+        },
+        {
+          "title": "Technical / Programme Head",
+          "grade": 4,
+          "requirements": {
+            "C_DATA_QUALITY": 4,
+            "C_DATAVIZ": 4,
+            "C_CLOUD": 3,
+            "C_APIS": 4,
+            "C_OPEN_DATA": 4,
+            "C_CYBER": 3,
+            "C_DPDP": 4,
+            "C_GOV_CLOUD": 3,
+            "C_DPI": 3,
+            "C_LEADERSHIP": 3,
+            "C_COMMUNICATION": 4,
+            "C_PROJECT_MGMT": 4,
+            "C_ETHICS": 4,
+            "C_DECISION_MAKING": 4,
+            "C_CHANGE_MGMT": 3
+          },
+          "duties": "Oversees enterprise data integration architecture, cloud environments, and API governance.",
+          "source": "All4one.pdf",
+          "page": 9,
+          "id": "PDF_A17_L4"
+        },
+        {
+          "title": "Director / Chief Data Officer",
+          "grade": 5,
+          "requirements": {
+            "C_DATA_QUALITY": 5,
+            "C_CLOUD": 4,
+            "C_APIS": 4,
+            "C_OPEN_DATA": 5,
+            "C_CYBER": 4,
+            "C_DPDP": 5,
+            "C_GOV_CLOUD": 4,
+            "C_DPI": 4,
+            "C_LEADERSHIP": 5,
+            "C_COMMUNICATION": 5,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 5,
+            "C_DECISION_MAKING": 5,
+            "C_CHANGE_MGMT": 4
+          },
+          "duties": "Owns DGCI&S; open data strategy, cloud architecture, and cross-government data exchange standards.",
+          "source": "All4one.pdf",
+          "page": 9,
+          "id": "PDF_A17_L5"
+        },
+        {
+          "title": "Director General",
+          "grade": 6,
+          "requirements": {
+            "C_DATA_QUALITY": 6,
+            "C_OPEN_DATA": 5,
+            "C_CYBER": 5,
+            "C_DPDP": 5,
+            "C_GOV_CLOUD": 5,
+            "C_DPI": 5,
+            "C_LEADERSHIP": 6,
+            "C_COMMUNICATION": 6,
+            "C_PROJECT_MGMT": 5,
+            "C_ETHICS": 6,
+            "C_DECISION_MAKING": 6,
+            "C_CHANGE_MGMT": 6
+          },
+          "duties": "Sets national commercial open data mandates, DPI alignment, and digital governance strategy.",
+          "source": "All4one.pdf",
+          "page": 9,
+          "id": "PDF_A17_L6"
+        }
+      ],
+      "source_area": "Commerce — Open Data, APIs & Data Processing",
+      "ministry_id": "COMMERCE",
+      "ministry": "Ministry of Commerce & Industry (Department of Commerce / DGCI&S)"
+    }
+  ],
+  "ministries": [
+    {
+      "id": "MOSPI",
+      "name": "Ministry of Statistics & Programme Implementation (MoSPI)",
+      "departments": [
+        {
+          "id": "A01",
+          "name": "Survey Methodology & Sampling"
+        },
+        {
+          "id": "A02",
+          "name": "National Accounts & Economic Statistics"
+        },
+        {
+          "id": "A03",
+          "name": "Price & Index Statistics"
+        },
+        {
+          "id": "A04",
+          "name": "Industrial Statistics"
+        },
+        {
+          "id": "A05",
+          "name": "SDG, Metadata & Data Quality"
+        },
+        {
+          "id": "A06",
+          "name": "Data Informatics, AI & Analytics"
+        }
+      ]
+    },
+    {
+      "id": "AGRICULTURE",
+      "name": "Ministry of Agriculture & Farmers Welfare (ES&E / DES)",
+      "departments": [
+        {
+          "id": "A07",
+          "name": "Agricultural Statistics"
+        },
+        {
+          "id": "A08",
+          "name": "Cost of Cultivation"
+        },
+        {
+          "id": "A09",
+          "name": "Land Use, GIS & Geospatial Analytics"
+        },
+        {
+          "id": "A10",
+          "name": "Agricultural Prices & Market Intelligence"
+        }
+      ]
+    },
+    {
+      "id": "LABOUR",
+      "name": "Ministry of Labour & Employment (Labour Bureau)",
+      "departments": [
+        {
+          "id": "A11",
+          "name": "Labour & Employment Statistics"
+        },
+        {
+          "id": "A12",
+          "name": "Price & Index Statistics"
+        },
+        {
+          "id": "A13",
+          "name": "Labour Surveys, Research & Analytics"
+        },
+        {
+          "id": "A14",
+          "name": "Training, Data Quality & Digitization"
+        }
+      ]
+    },
+    {
+      "id": "COMMERCE",
+      "name": "Ministry of Commerce & Industry (Department of Commerce / DGCI&S)",
+      "departments": [
+        {
+          "id": "A15",
+          "name": "Trade Statistics"
+        },
+        {
+          "id": "A16",
+          "name": "Export-Import Data & Commercial Intelligence"
+        },
+        {
+          "id": "A17",
+          "name": "Open Data, APIs & Data Processing"
+        }
+      ]
+    }
+  ],
+  "ministry_source": "User-selected four ministries and seventeen work areas, 2026-09-04"
+}

@@ -10,7 +10,7 @@ function renderAiAssistant(state) {
     return `
     <!-- Floating AI Trigger Button -->
     <div class="floating-ai-btn">
-        <button onclick="store.toggleChat()" class="w-14 h-14 rounded-full bg-navy-900 text-white flex items-center justify-center text-xl shadow-2xl border-2 border-orange-500 hover:scale-105 transition-all" style="background: #0B2545;" title="Ask StatSkill AI Assistant">
+        <button onclick="store.toggleChat()" aria-label="${tr('Ask learning assistant')}" class="w-14 h-14 rounded-full bg-navy-900 text-white flex items-center justify-center text-xl shadow-2xl border-2 border-orange-500 hover:scale-105 transition-all" style="background: #0B2545;" title="Ask StatSkill AI Assistant">
             <i class="fa-solid ${isChatOpen ? 'fa-xmark' : 'fa-robot'} text-orange-400"></i>
         </button>
     </div>
@@ -26,11 +26,11 @@ function renderAiAssistant(state) {
                 <div>
                     <h3 class="text-xs font-black tracking-wide">StatSkill AI Assistant</h3>
                     <div class="flex items-center gap-1.5 text-[10px] text-emerald-400 font-bold">
-                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> MoSPI RAG Active
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Learning support
                     </div>
                 </div>
             </div>
-            <button onclick="store.toggleChat()" class="text-slate-400 hover:text-white text-base">
+            <button aria-label="Close assistant" onclick="store.toggleChat()" class="text-slate-400 hover:text-white text-base">
                 <i class="fa-solid fa-xmark"></i>
             </button>
         </div>
@@ -49,19 +49,15 @@ function renderAiAssistant(state) {
         </div>
 
         <!-- Chat Messages Body -->
-        <div class="flex-1 p-4 overflow-y-auto space-y-4 text-xs bg-slate-50/50" id="chatMessagesWrapper">
+        <div class="flex-1 p-4 overflow-y-auto space-y-4 text-xs bg-slate-50/50" id="chatMessagesWrapper" role="log" aria-live="polite">${!messages.length?empty("Ask about your learning or uploaded materials."):""}
             ${messages.map(msg => `
                 <div class="flex flex-col ${msg.sender === 'user' ? 'items-end' : 'items-start'} space-y-1">
                     <div class="max-w-[85%] p-3 rounded-2xl ${msg.sender === 'user' ? 'bg-navy-900 text-white rounded-br-none' : 'bg-white text-slate-800 border border-slate-200 rounded-bl-none shadow-sm'}" style="${msg.sender === 'user' ? 'background: #0B2545;' : ''}">
                         <div class="leading-relaxed whitespace-pre-line">${formatAiText(msg.text)}</div>
-                        ${msg.citations && msg.citations.length > 0 ? `
-                            <div class="mt-2 pt-2 border-t border-slate-100 text-[10px] text-slate-500 space-y-0.5">
-                                <span class="font-bold text-slate-700 block"><i class="fa-solid fa-book-bookmark text-orange-500"></i> Official Citations:</span>
-                                ${msg.citations.map(c => `<div class="italic">• ${c}</div>`).join('')}
-                            </div>
-                        ` : ''}
+                        ${sourceButtons(msg.sources || [])}
+
                     </div>
-                    <span class="text-[9px] text-slate-400 px-1">${msg.timestamp || 'Now'}</span>
+                    <span class="text-[9px] text-slate-400 px-1">${esc(msg.timestamp || 'Now')}</span>
                 </div>
             `).join('')}
         </div>
@@ -71,10 +67,12 @@ function renderAiAssistant(state) {
             AI-generated responses should be verified against official training materials and applicable guidelines.
         </div>
 
+        ${state.error ? `<p role="alert" class="live-error">${esc(userFacingError(state.error))}</p>` : ''}
+        ${state.busy ? `<p role="status" class="live-status">${tr('Working…')}</p>` : ''}
         <!-- Chat Input Footer -->
         <div class="p-3 bg-white border-t border-slate-200 flex items-center gap-2">
-            <input type="text" id="chatInputBox" onkeypress="handleChatKeyPress(event)" placeholder="Ask about competencies, NSSO surveys, courses..." class="flex-1 p-2 text-xs rounded-xl border border-slate-300 focus:outline-none focus:border-navy-900">
-            <button onclick="submitChat()" class="w-9 h-9 rounded-xl bg-orange-600 hover:bg-orange-700 text-white flex items-center justify-center text-xs shadow-md">
+            <input type="text" id="chatInputBox" aria-label="Message" onkeypress="handleChatKeyPress(event)" placeholder="Ask about competencies, NSSO surveys, courses..." class="flex-1 p-2 text-xs rounded-xl border border-slate-300 focus:outline-none focus:border-navy-900">
+            <button aria-label="Send" ${state.busy?'disabled':''} onclick="submitChat()" class="w-9 h-9 rounded-xl bg-orange-600 hover:bg-orange-700 text-white flex items-center justify-center text-xs shadow-md">
                 <i class="fa-solid fa-paper-plane"></i>
             </button>
         </div>
@@ -84,7 +82,7 @@ function renderAiAssistant(state) {
 
 function formatAiText(text) {
     // Basic Markdown support for bolding and code
-    return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    return esc(text).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
 }
 
 function sendQuickPrompt(promptText) {

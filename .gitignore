@@ -15,6 +15,16 @@ venv/
 ENV/
 .venv
 
+# StatSkill private runtime state
+SIH/.env
+/SIH/igot_demo.db
+/SIH/users.json
+SIH/uploads/
+SIH/tmp/
+SIH/logs/
+SIH/backups/
+SIH/db/backups/
+
 # IDE & Editor files
 .vscode/
 .idea/

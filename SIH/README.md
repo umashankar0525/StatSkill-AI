@@ -1,73 +1,70 @@
-# StatSkill AI — AI-Powered Competency & Learning Platform for Official Statistics
+# StatSkill AI
 
-> **Tagline**: *"Building a Future-Ready Statistical Workforce"*  
-> **Agency**: Ministry of Statistics and Programme Implementation (MoSPI) / National Statistical Systems Training Academy (NSSTA)
+Local learning and competency assessment portal for statistical officers, trainers and administrators. The frontend uses the imported GitHub UI connected to the existing Python, RAG and Ollama backend. See [UI_IMPORT.md](UI_IMPORT.md).
 
----
+## Run locally
 
-## 1. Overview & Core Mission
+After cloning, open PowerShell in this directory and run:
 
-**StatSkill AI** is a state-of-the-art, secure, scalable, AI-enabled competency intelligence and capacity-building platform designed specifically for the **National Statistical System (NSS)** of India. 
-
-The platform integrates directly with the **iGOT Karmayogi** learning ecosystem, **NSSTA** training programmes, and **TPAC** recommendations, creating a measurable 360° capacity building loop:
-
-$$\text{Competency Profiling} \longrightarrow \text{Skill Gap Identification} \longrightarrow \text{Explainable AI Recommendations} \longrightarrow \text{Learning Pathways} \longrightarrow \text{AI MCQ Generation} \longrightarrow \text{Assessment Player} \longrightarrow \text{+6\% Competency Gain} \longrightarrow \text{Workforce Analytics}$$
-
----
-
-## 2. Key Modules & Architectural Highlights
-
-### A. Role-Based Experiences & Persona Access
-- **Learner Experience**: Personalized dashboard for **Ananya Sharma (Statistical Officer, NSO)** with real-time competency delta tracking, 5 KPI cards, Competency Radar chart, prioritized skill gaps list, and active learning roadmaps.
-- **Trainer / Faculty Console**: Question bank QA pipeline for **Dr. Rajesh Verma (NSSTA Faculty)** with source verification, draft approval queues, and cohort weak-topic diagnostics.
-- **Administrator Hub**: Enterprise workforce intelligence for **Smt. Priya Menon (Capacity Building Director, MoSPI)** with Departmental Competency Heatmaps and 3-Year Future Skills Forecasting.
-- **Super Administrator**: System configuration, iGOT API Gateway sync monitor, and compliance auditing.
-
-### B. Transparent AI Learning Advisor & Recommendation Engine
-Uses an explainable multi-attribute decision model with transparent formula scoring:
-$$\text{Recommendation Score} = 30\% \text{ Gap} + 20\% \text{ Role} + 15\% \text{ Career} + 15\% \text{ Dept} + 10\% \text{ Prior} + 10\% \text{ Demand}$$
-Every recommendation provides an interactive **"Why this course?"** breakdown modal displaying individual sub-scores.
-
-### C. Grounded AI Assessment & MCQ Generator
-- Uploads or selects approved training manuals (e.g., *NSSO 78th Round Sampling Design Manual*, *Data Quality Framework for Official Statistics*).
-- Multi-step QA Pipeline: Semantic Chunking $\rightarrow$ Topic Extraction $\rightarrow$ Bloom's Taxonomy Alignment $\rightarrow$ Hallucination Verification $\rightarrow$ Source Grounding.
-- Interactive **"View Source"** modal displaying exact page and ground-truth text snippets.
-
-### D. Timed Quiz Player & Competency Delta Boost
-- Full exam mode with question status palette, timer, auto-save, and mark for review.
-- Instant submission score with **+6% Competency Score Boost**, personalized strength vs weakness feedback, and automated loop back to learning paths.
-
-### E. Floating StatSkill AI Virtual Assistant (RAG Chatbot)
-- Floating assistant with quick prompts, RAG citations to official statistical guidelines, and compliance disclaimers.
-
-### F. Accessibility & Digital India Design Language
-- High-contrast mode toggle, font size adjusters (A-, A, A+), WCAG 2.1 AA compliant color ratios, and multilingual support (English, हिन्दी, తెలుగు).
-
----
-
-## 3. How to Run Locally
-
-### Start Server
-Run the built-in server from the project directory:
-
-```bash
-python3 server.py
+```powershell
+.\setup.ps1
+.\run.ps1
 ```
 
-### Access URL
-Open your web browser and navigate to:
-```
-http://localhost:8000
-```
+Then open http://127.0.0.1:8000. The setup command creates an isolated Python
+environment, installs the backend dependencies, prepares a private working
+database, restores the packaged study files, downloads the exact Ollama models,
+and caches the embedding model. No cloud LLM API key is required.
 
----
+Use `.\setup.ps1 -SkipModels` only when the models and embedding cache are
+already installed. Use `.\setup.ps1 -ResetDatabase` to replace local application
+data with a fresh contributor database.
 
-## 4. REST API Endpoints
+The repository records the exact local model names and layer checksums in
+`models/manifest.json`. Llama 3.2 3B writes quiz questions with a small
+GPU-resident context; Llama 3.1 8B handles assessment evaluation, RAG responses,
+and iGOT course ranking. Their approximately 6.9 GB of upstream Ollama weights
+are downloaded by `setup.ps1` rather than stored as Git objects. See
+`.env.example` for settings. Never commit `.env` or credentials.
 
-- `GET /api/state` — Full reactive state for demo session.
-- `GET /api/competencies` — Official statistics competency definitions and 5-level criteria.
-- `GET /api/learning-path` — Phased learning roadmap items.
-- `GET /api/igot/status` — iGOT Karmayogi bidirectional sync telemetry.
-- `POST /api/assessments/submit` — Submit quiz, calculate score, apply +6% competency gain.
-- `POST /api/ai/generate-questions` — Grounded question generation with Bloom's taxonomy.
-- `POST /api/ai/chat` — RAG-backed statistical assistant chat.
+Document search uses cached `all-MiniLM-L6-v2` embeddings and sqlite-vec. Tesseract enables OCR; LibreOffice handles legacy Office conversion; `python tests/setup_transcription.py` prepares offline speech transcription.
+
+## Application
+
+- English/Hindi entry and registration for the four selected ministries and their 17 work areas.
+- Role profiles, evidence-based skill assessment and learning recommendations.
+- Adaptive assessments with a rolling buffer: two opening questions are prepared together, then question n+1 is prepared while question n is displayed using evidence through n−1.
+- Uploaded learning materials, source retrieval, grounded questions and chat.
+- Courses, progress reports, personal objectives and measurable key results.
+- Trainer and administrator material and workforce views.
+
+The models and competency calculations run in the backend. Llama 3.2 3B is fully GPU-offloaded for quiz generation; Llama 3.1 8B uses a conservative 24-layer GPU allocation for evaluation and recommendations. Two opening questions are prepared in one batch, and evaluation runs after the final answer. Thirteen supplied study PDFs are indexed and mapped to role topics. See [ASSESSMENT_REPAIR.md](ASSESSMENT_REPAIR.md) for coverage, retry behavior and measured validation. External government-system connectivity requires real service credentials; it is not implied by the portal's course links or organization seed data.
+
+## Source layout
+
+| Location | Purpose |
+| --- | --- |
+| `server.py`, `live_api.py` | HTTP server, authentication and application APIs |
+| `storage.py`, `db/` | Persistent schema, migrations and organization seeds |
+| `data/starter/igot_demo.db` | Clean database with the complete role framework and prebuilt RAG index |
+| `data/study_materials/` | Thirteen checksum-verified source PDFs used by RAG |
+| `models/manifest.json`, `setup.ps1` | Exact local model versions and one-command contributor setup |
+| `rag_engine.py` | Extraction, embeddings, vector search and local LLM generation |
+| `quiz_service.py`, `adaptive_quiz_engine.py` | Assessment lifecycle and adaptation |
+| `frac_engine.py`, `frac_seed.py` | Role requirements, scoring and provisional seed mappings |
+| `okr_service.py` | Objectives, key results and progress calculation |
+| `static/` | Connected browser application and accessibility controls |
+| `tests/` | Isolated integration, real-model and converter checks |
+
+`igot_demo.db`, `users.json`, `uploads/`, `.env`, logs and backups are private
+runtime files and are excluded from Git. A clone receives clean replacements
+from `data/starter/`, so personal accounts and assessment answers are never
+shared with contributors. The organization seed generator is a maintenance
+utility using Node's built-in modules; the running website does not require the
+old Express demo or its npm packages.
+
+## Verification and implementation notes
+
+Run `python tests/test_integration.py` for isolated HTTP regressions. Run `python tests/check_local_ai.py` for real extraction, embedding, retrieval and Llama generation; it needs the local AI services. `tests/check_converters.py` checks optional file converters.
+
+See [SOUL_INTEGRATION.md](SOUL_INTEGRATION.md) for the current repository review, model routing, supplied-PDF mappings and validation. See [USER_FLOW.md](USER_FLOW.md) for the current experience, [INTEGRATION_STATUS.md](INTEGRATION_STATUS.md) for implementation details and limitations, and [CLEANUP.md](CLEANUP.md) for the source cleanup and recovery location.

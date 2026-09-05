@@ -4,10 +4,10 @@
  */
 
 function renderLearningPath(state) {
-    const pathItems = state.learningPath;
+    const pathItems = state.learningPath.filter(x=>x.enrolled);
     const completedCount = pathItems.filter(item => item.progress === 100).length;
     const totalCount = pathItems.length;
-    const pathPercent = totalCount > 0 ? Math.round((completedCount / totalCount) * 100) : 0;
+    const pathPercent = totalCount ? Math.round((completedCount / totalCount) * 100) : 0;
 
     return `
     <div class="max-w-5xl mx-auto px-4 sm:px-8 py-8 space-y-8">
@@ -15,13 +15,13 @@ function renderLearningPath(state) {
         <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4 border-l-4 border-navy-900">
             <div>
                 <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full uppercase">
-                    AI Sequenced Learning Journey
+                    My learning journey
                 </span>
                 <h1 class="text-2xl sm:text-3xl font-black text-navy-900 mt-2" style="color: #0B2545;">
                     Your Recommended Learning Path
                 </h1>
                 <p class="text-xs sm:text-sm text-slate-600 max-w-2xl mt-1">
-                    Customized roadmap designed to elevate your official statistical proficiencies from Level 2 to Level 4 over a structured 4-phase sequence.
+                    Continue your saved learning. iGOT course progress is managed on iGOT.
                 </p>
             </div>
 
@@ -36,6 +36,7 @@ function renderLearningPath(state) {
         <!-- Phased Timeline View -->
         <div class="stat-card p-6 sm:p-10 space-y-8">
             <div class="roadmap-timeline space-y-8">
+                ${!pathItems.length ? empty("No enrolled courses yet. Add a course from the learning advisor.") : ""}
                 ${pathItems.map((item, idx) => {
                     const isCompleted = item.progress === 100;
                     const isInProgress = item.progress > 0 && item.progress < 100;
@@ -80,18 +81,11 @@ function renderLearningPath(state) {
 
                             <!-- Interactive Actions -->
                             <div class="pt-2 flex flex-wrap items-center justify-between gap-3">
-                                <button onclick="togglePathItemCompletion('${item.id}')" class="text-xs font-semibold text-slate-600 hover:text-navy-900 flex items-center gap-1.5">
-                                    <i class="fa-solid ${isCompleted ? 'fa-square-check text-emerald-600' : 'fa-square text-slate-300'}"></i>
-                                    ${isCompleted ? 'Completed' : 'Mark as Completed'}
-                                </button>
+                                <span class="text-xs font-semibold text-slate-600">${isCompleted ? 'Completed' : 'Complete the course assessment to record progress.'}</span>
 
                                 <div class="flex items-center gap-2">
-                                    <button onclick="store.navigate('igot-hub')" class="btn btn-secondary text-xs py-1.5 px-3">
-                                        <i class="fa-solid fa-play text-orange-500"></i> Resume Course
-                                    </button>
-                                    <button onclick="store.navigate('ai-generator')" class="btn btn-primary text-xs py-1.5 px-3">
-                                        <i class="fa-solid fa-file-circle-question text-orange-400"></i> Practice Quiz
-                                    </button>
+                                    ${courseActions(item.raw)}
+
                                 </div>
                             </div>
                         </div>
@@ -104,7 +98,7 @@ function renderLearningPath(state) {
             <div class="p-4 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
                 <div class="flex items-center gap-2 text-slate-700 font-medium">
                     <i class="fa-solid fa-circle-info text-blue-600 text-base"></i>
-                    <span>Completing all 4 phases satisfies the mandated annual training target for Subordinate Statistical Service (SSS).</span>
+                    <span>Course completion is recorded after passing its assessment.</span>
                 </div>
                 <button onclick="store.navigate('recommendations')" class="btn btn-saffron text-xs py-2 px-4 whitespace-nowrap">
                     <i class="fa-solid fa-plus"></i> Add More Courses
@@ -115,22 +109,5 @@ function renderLearningPath(state) {
     `;
 }
 
-function togglePathItemCompletion(itemId) {
-    const item = window.store.state.learningPath.find(i => i.id === itemId);
-    if (item) {
-        if (item.progress === 100) {
-            item.progress = 0;
-            item.status = "Not Started";
-        } else {
-            item.progress = 100;
-            window.store.state.overallScore = Math.min(100, window.store.state.overallScore + 2);
-            if (window.store.state.user) {
-                window.store.state.user.overallCompetencyScore = window.store.state.overallScore;
-            }
-        }
-        window.store.notify();
-    }
-}
 
 window.renderLearningPath = renderLearningPath;
-window.togglePathItemCompletion = togglePathItemCompletion;

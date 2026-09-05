@@ -1,0 +1,19 @@
+{
+  "source_url": "https://portal.igotkarmayogi.gov.in/content-store/orgStore/0133809553768366080/1729231972061_Course%20Recommendations_Karmayogi%20Saptah.pdf",
+  "source_title": "iGOT Karmayogi National Learning Week course recommendations, 2024",
+  "verified_on": "2026-09-04",
+  "verification": "Titles and course identifiers verified against the public iGOT publication; live enrolment availability requires iGOT sign-in.",
+  "courses": [
+    {"id":"do_1141085925442682881296","title":"Basics of Communication","provider":"Indian Institute of Mass Communication (IIMC)","competencies":["C_COMMUNICATION"],"page":9},
+    {"id":"do_1138416487704576001135","title":"Speaking Effectively","provider":"Harappa Education","competencies":["C_COMMUNICATION"],"page":3},
+    {"id":"do_11384383331773644811","title":"Communication for Citizen - Centricity","provider":"DoPT","competencies":["C_COMMUNICATION"],"page":3},
+    {"id":"do_1140994741049999361127","title":"Responsible Data Management","provider":"DataDotOrg","competencies":["C_ETHICS"],"page":9},
+    {"id":"do_114085334432260096152","title":"Gen AI for Everyone","provider":"Fractal","competencies":["C_AI_ML"],"page":2},
+    {"id":"do_114094544732119040129","title":"Responsible AI in the Generative AI Era","provider":"Fractal","competencies":["C_AI_ML","C_ETHICS"],"page":11},
+    {"id":"do_114085865386598400145","title":"ChatGPT and Generative AI tools for Government Officials","provider":"Wadhwani Foundation","competencies":["C_AI_ML"],"page":2},
+    {"id":"do_11391672014338457611","title":"Cyber Security","provider":"UpGrad","competencies":["C_CYBER"],"page":2},
+    {"id":"do_113814138061455360187","title":"Cyber Security Basics","provider":"Microsoft","competencies":["C_CYBER"],"page":7},
+    {"id":"do_11390571206983680011","title":"Proficiency in Technical and Scientific Writing","provider":"Capacity Building Commission","competencies":["C_COMMUNICATION"],"page":11},
+    {"id":"do_11371798254448640012","title":"An Introduction to Science Communication","provider":"Fast India","competencies":["C_COMMUNICATION"],"page":11}
+  ]
+}

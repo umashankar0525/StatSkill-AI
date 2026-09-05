@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 256" role="img" aria-labelledby="title description">
+  <title id="title">StatSkill AI guided growth logo</title>
+  <desc id="description">A competency framework containing an S-shaped learning path that rises into an arrow.</desc>
+  <g transform="translate(24 8)">
+    <path fill="#0B1B2B" d="M120 8 224 68v120l-104 60L16 188V68z"/>
+    <path fill="none" stroke="#14B8A6" stroke-width="21" stroke-linecap="round" d="M64 174c22 31 87 31 105-4 17-34-20-44-52-50-35-7-51-23-38-50 14-28 65-29 92-6"/>
+    <path fill="#14B8A6" d="m193 38-7 47-41-23z"/>
+  </g>
+  <text x="286" y="157" fill="#0B1B2B" font-family="'Helvetica Neue', Arial, sans-serif" font-size="90" font-weight="700" letter-spacing="-3">StatSkill</text>
+  <text x="676" y="157" fill="#14B8A6" font-family="'Helvetica Neue', Arial, sans-serif" font-size="90" font-weight="700" letter-spacing="-3"> AI</text>
+</svg>

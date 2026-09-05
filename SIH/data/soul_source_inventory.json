@@ -1,0 +1,820 @@
+{
+  "repository": "https://github.com/sivasankar-11/soul",
+  "commit": "f99c5e454cd1fd60bcdf9ca84a0ba78c222fe378",
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 122,
+      "sha256": "9059477856d81825a136a3ec435eae3bc0f5897ea7d66e8cd2f491938479b7e5",
+      "category": "metadata or binary; no executable integration"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 467,
+      "sha256": "78f6225798714da1e98ac8ec12ecfbd8c5fce08a0fb449ee7b0d11244622e810",
+      "category": "metadata or binary; no executable integration"
+    },
+    {
+      "path": "groq_client.py",
+      "bytes": 29743,
+      "sha256": "8719acd02bad175ac2e60c27ec9a3734369d0ee4df351864b58f94d445e20358",
+      "functions": [
+        "__init__",
+        "is_configured",
+        "set_api_key",
+        "get_status",
+        "generate_quiz",
+        "_build_fallback_response"
+      ],
+      "imports": [
+        "os",
+        "json",
+        "re",
+        "time",
+        "urllib.request",
+        "urllib.error"
+      ],
+      "category": "model pipeline"
+    },
+    {
+      "path": "igot-demo 2/db/generate_seed.js",
+      "bytes": 3975,
+      "sha256": "5a9f42199aa93f44ba4f51d03ad88916f62cb936a9a5a105ef48c6103e6f5afa",
+      "functions": [],
+      "category": "demo server/database bootstrap",
+      "demo_markers": []
+    },
+    {
+      "path": "igot-demo 2/db/schema.sql",
+      "bytes": 1316,
+      "sha256": "0f9d5aaf11a7189e5a507af356a48e1413acc27b0d5d8c511542abe0b3657d75",
+      "functions": [],
+      "category": "demo server/database bootstrap",
+      "demo_markers": []
+    },
+    {
+      "path": "igot-demo 2/db/seed.sql",
+      "bytes": 94714,
+      "sha256": "8b496eef9d10eab59e83ba006806198228ac5acf921945c7f8542dd37edf028e",
+      "functions": [],
+      "category": "demo server/database bootstrap",
+      "demo_markers": []
+    },
+    {
+      "path": "igot-demo 2/package-lock.json",
+      "bytes": 32699,
+      "sha256": "c4b94cee69b0579872bb40c6daa00b49c90b614a598543f439d043a6090df358",
+      "category": "metadata or binary; no executable integration"
+    },
+    {
+      "path": "igot-demo 2/package.json",
+      "bytes": 327,
+      "sha256": "7335906ae5be4c062ef1eb4956257eecff7ada4bbb3fa41e62f350ee3dddc58b",
+      "category": "metadata or binary; no executable integration"
+    },
+    {
+      "path": "igot-demo 2/public/index.html",
+      "bytes": 4755,
+      "sha256": "d59d64d6ffcbc6f987b499aba4483d4f6e49db7c0c87370527c4c0916422a96b",
+      "functions": [
+        "loadStates",
+        "loadCentralMinistries",
+        "loadStateDepartments",
+        "loadSubDepartments"
+      ],
+      "category": "demo server/database bootstrap",
+      "demo_markers": []
+    },
+    {
+      "path": "igot-demo 2/README.md",
+      "bytes": 3299,
+      "sha256": "b4a0de46d2455c80286797010418a422592a08932a4905a8ad8d652362dfa7f0",
+      "functions": [],
+      "category": "demo server/database bootstrap",
+      "demo_markers": []
+    },
+    {
+      "path": "igot-demo 2/server.js",
+      "bytes": 3189,
+      "sha256": "34cf5ae9475f59acc57975f8be598cd41bfabcc109e3dbebd382aace80fa275c",
+      "functions": [
+        "initDbIfNeeded"
+      ],
+      "category": "demo server/database bootstrap",
+      "demo_markers": []
+    },
+    {
+      "path": "ingest_ai_and_cyber_pdfs.py",
+      "bytes": 4140,
+      "sha256": "5d9516fd671decc40d3c4e6465404de06ea1db21e845dc0032884d5515602420",
+      "functions": [
+        "main"
+      ],
+      "imports": [
+        "pdf_ingestor",
+        "os",
+        "shutil",
+        "sqlite3",
+        "json"
+      ],
+      "category": "ingestion utility"
+    },
+    {
+      "path": "ingest_aiml_pdf.py",
+      "bytes": 4029,
+      "sha256": "2214d2afa2c613f41754d3213d0f3a33ee2946dc37ec327a2e2532b8f4933f58",
+      "functions": [
+        "main"
+      ],
+      "imports": [
+        "pdf_ingestor",
+        "os",
+        "shutil",
+        "sqlite3",
+        "json"
+      ],
+      "category": "ingestion utility"
+    },
+    {
+      "path": "ingest_communication_skills_pdf.py",
+      "bytes": 20558,
+      "sha256": "c70cb5cfc2ef8e4004e5c9e18467c2f74f36b8ea85908729d9063c0c25bbf295",
+      "functions": [
+        "create_pdf",
+        "ingest_and_update_mappings"
+      ],
+      "imports": [
+        "pdf_ingestor",
+        "os",
+        "fitz",
+        "sqlite3",
+        "json"
+      ],
+      "category": "ingestion utility"
+    },
+    {
+      "path": "ingest_crop_statistics_pdf.py",
+      "bytes": 3394,
+      "sha256": "28e266ca97e24c4b2086c129a0ba52d997d649102e905f20c53f2c394e454238",
+      "functions": [
+        "main"
+      ],
+      "imports": [
+        "pdf_ingestor",
+        "os",
+        "shutil",
+        "sqlite3",
+        "json"
+      ],
+      "category": "ingestion utility"
+    },
+    {
+      "path": "ingest_cybersecurity_pdf.py",
+      "bytes": 3727,
+      "sha256": "04ffabe0256253ab0cb24c70f50183c46a89d7ff6ba2da20fe89c91f66bd0a23",
+      "functions": [
+        "main"
+      ],
+      "imports": [
+        "pdf_ingestor",
+        "os",
+        "shutil",
+        "sqlite3",
+        "json"
+      ],
+      "category": "ingestion utility"
+    },
+    {
+      "path": "ingest_ilo_labour_statistics_pdf.py",
+      "bytes": 23857,
+      "sha256": "318f1fa2624c02a217a6e8520c87d1082a4192b8d6251bf948f3d9e865c7f90e",
+      "functions": [
+        "create_pdf",
+        "ingest_and_update_mappings"
+      ],
+      "imports": [
+        "pdf_ingestor",
+        "os",
+        "fitz",
+        "sqlite3",
+        "json"
+      ],
+      "category": "ingestion utility"
+    },
+    {
+      "path": "ingest_industrial_statistics_pdf.py",
+      "bytes": 3055,
+      "sha256": "6f13c1f409d04c45506a18642bbf8dc03e9d8d8c4a8e22af510bcecaf2b62bd8",
+      "functions": [
+        "main"
+      ],
+      "imports": [
+        "pdf_ingestor",
+        "os",
+        "shutil",
+        "sqlite3",
+        "json"
+      ],
+      "category": "ingestion utility"
+    },
+    {
+      "path": "ingest_sampling_pdf.py",
+      "bytes": 15095,
+      "sha256": "129438c05db8121b062fc21d0e44e5e3913f36f7648b90349ad2749026d20bba",
+      "functions": [
+        "build_pdf"
+      ],
+      "imports": [
+        "pdf_ingestor",
+        "os",
+        "fitz"
+      ],
+      "category": "ingestion utility"
+    },
+    {
+      "path": "ingest_sdg_pdf.py",
+      "bytes": 10122,
+      "sha256": "96428bc8759171169c125a62b8ca16af3905ae93f3ee67746124407f7fe5155f",
+      "functions": [
+        "build_pdf"
+      ],
+      "imports": [
+        "pdf_ingestor",
+        "os",
+        "fitz"
+      ],
+      "category": "ingestion utility"
+    },
+    {
+      "path": "pdf_ingestor.py",
+      "bytes": 15163,
+      "sha256": "ff5e261c581cc6d8472f839fa04c0623daba9f1532fe2235fea934164c33cc22",
+      "functions": [
+        "get_embedding_function",
+        "get_chroma_collection",
+        "extract_text_from_pdf",
+        "chunk_text",
+        "file_hash",
+        "init_pdf_tracking_table",
+        "set_dept_pdf_mapping",
+        "get_dept_pdf_mappings",
+        "get_pdfs_for_dept",
+        "set_role_pdf_mapping",
+        "get_all_role_pdf_mappings",
+        "get_pdfs_for_role",
+        "is_already_ingested",
+        "record_pdf_in_db",
+        "ingest_pdf",
+        "ingest_bytes",
+        "list_ingested_pdfs",
+        "delete_pdf",
+        "get_collection_stats",
+        "_auto_ingest_existing_docs"
+      ],
+      "imports": [
+        "chromadb.utils",
+        "os",
+        "hashlib",
+        "sqlite3",
+        "time",
+        "json",
+        "pdfplumber",
+        "chromadb"
+      ],
+      "category": "model pipeline"
+    },
+    {
+      "path": "rag_quiz_client.py",
+      "bytes": 18098,
+      "sha256": "8488bcb01bd05cd9211094955fce927be40785183abea2ecfca173a719db7070",
+      "functions": [
+        "__init__",
+        "api_key",
+        "is_configured",
+        "retrieve_context",
+        "_build_context_string",
+        "generate_rag_quiz"
+      ],
+      "imports": [
+        "pdf_ingestor",
+        "groq",
+        "os",
+        "json",
+        "time",
+        "ssl",
+        "re",
+        "re",
+        "re"
+      ],
+      "category": "model pipeline"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4270,
+      "sha256": "867017146cecaf9151b6fa21d79adf7793a76e57ab30d0dc2cf55c7142551d7d",
+      "functions": [],
+      "category": "documentation",
+      "demo_markers": []
+    },
+    {
+      "path": "server.py",
+      "bytes": 75005,
+      "sha256": "a0f8f99c6072e0181ea5bfca153d84c3b66c3585ea8df96c945691378d81403d",
+      "functions": [
+        "load_users",
+        "save_users",
+        "get_db_connection",
+        "get_user_record_from_db",
+        "hash_password",
+        "load_env_file",
+        "send_real_sms_otp",
+        "send_smtp_otp",
+        "init_db_if_needed",
+        "row_to_user_dict",
+        "run_server",
+        "__init__",
+        "end_headers",
+        "do_GET",
+        "do_POST",
+        "handle_pdf_upload",
+        "send_json",
+        "do_OPTIONS",
+        "handle_api_get",
+        "handle_api_post"
+      ],
+      "imports": [
+        "groq_client",
+        "pdf_ingestor",
+        "rag_quiz_client",
+        "email.mime.text",
+        "email.mime.multipart",
+        "http.server",
+        "socketserver",
+        "json",
+        "urllib.parse",
+        "os",
+        "sys",
+        "time",
+        "random",
+        "hashlib",
+        "secrets",
+        "sqlite3",
+        "re",
+        "urllib.request",
+        "urllib.parse",
+        "base64",
+        "smtplib"
+      ],
+      "category": "server or mapping utility"
+    },
+    {
+      "path": "static/css/style.css",
+      "bytes": 8902,
+      "sha256": "1c275f3c4fd153a254f98711e6c632250ca6957c7555c980a10237c5e1bc0e7e",
+      "functions": [],
+      "category": "UI",
+      "demo_markers": []
+    },
+    {
+      "path": "static/emblem.svg",
+      "bytes": 437693,
+      "sha256": "f6b7475f96250c408c515bc56d5a6f34a60676770ca6b02f5d317245f267f1af",
+      "category": "metadata or binary; no executable integration"
+    },
+    {
+      "path": "static/index.html",
+      "bytes": 4305,
+      "sha256": "76274aa3189f69559bcdd304c36ddf224c07ae3a5e7e7392627776c5d7da7da1",
+      "functions": [],
+      "category": "UI",
+      "demo_markers": [
+        "mockData"
+      ]
+    },
+    {
+      "path": "static/js/accessibilityManager.js",
+      "bytes": 27158,
+      "sha256": "9d70e09fab138ab1abde1f1cdac23550aca9fed9fd741831232fcc1b6a6ac78d",
+      "functions": [
+        "loadSettings",
+        "saveSettings",
+        "injectCSS",
+        "applyAll",
+        "initTooltipEngine",
+        "showTooltip",
+        "hideTooltip",
+        "buildWidget",
+        "buildTriggerHTML",
+        "buildPanelHTML",
+        "updatePanelUI",
+        "setCard",
+        "bindWidgetEvents",
+        "bind",
+        "togglePanel",
+        "openPanel",
+        "closePanel",
+        "resetAll",
+        "boot"
+      ],
+      "category": "UI",
+      "demo_markers": [
+        "localStorage",
+        "setTimeout"
+      ]
+    },
+    {
+      "path": "static/js/app.js",
+      "bytes": 9767,
+      "sha256": "84fa70d5518bb5395d1f6715136a5c73eb881bd276a72d065682a9d645335660",
+      "functions": [
+        "renderApp",
+        "renderFooter",
+        "initNeuralCanvasAnimation",
+        "animate"
+      ],
+      "category": "UI",
+      "demo_markers": [
+        "Math.random",
+        "setTimeout"
+      ]
+    },
+    {
+      "path": "static/js/components/adminDash.js",
+      "bytes": 12033,
+      "sha256": "c39fbaefbfa4faf3b0eec5872e3360fa495e4effa321122ce98a6fd794f2608c",
+      "functions": [
+        "renderAdminDashboard"
+      ],
+      "category": "UI",
+      "demo_markers": [
+        "MOCK_DATA"
+      ]
+    },
+    {
+      "path": "static/js/components/aiAssistant.js",
+      "bytes": 6251,
+      "sha256": "5ad8ee821beeabcf7384069dce3c418a3164e759b4fba4a77fb7daf4bcf3d0f2",
+      "functions": [
+        "renderAiAssistant",
+        "formatAiText",
+        "sendQuickPrompt",
+        "submitChat",
+        "handleChatKeyPress",
+        "scrollChatBottom"
+      ],
+      "category": "UI",
+      "demo_markers": [
+        "setTimeout"
+      ]
+    },
+    {
+      "path": "static/js/components/aiGenerator.js",
+      "bytes": 93521,
+      "sha256": "70e72c366ea839c4f6e8932e38bce40de55e66ed753473edfd02dabf04465c64",
+      "functions": [
+        "fetchGroqStatus",
+        "fetchStudyLibrary",
+        "fetchRoleMappings",
+        "getPdfsAssignedToRole",
+        "renderAiGenerator",
+        "renderMatrixView",
+        "renderQuizView",
+        "renderLibraryView",
+        "renderLibraryList",
+        "setGeneratorMode",
+        "setMatrixDomainFilter",
+        "onMatrixSearch",
+        "openAssignModal",
+        "closeAssignModal",
+        "renderAssignModalPdfList",
+        "togglePdfSelection",
+        "saveCurrentRoleAssignment",
+        "unassignPdfFromRole",
+        "launchQuizForRole",
+        "onMinistryChange",
+        "onDepartmentChange",
+        "onRoleTitleChange",
+        "updateLibDeptDropdown",
+        "handleLibraryDrop",
+        "handleLibraryUpload",
+        "performLibraryUpload",
+        "showLibNotice",
+        "deleteStudyMaterial",
+        "refreshStudyLibrary",
+        "triggerAiGeneration",
+        "renderQuestionsList",
+        "viewQuestionSource",
+        "publishAndStartQuiz",
+        "openGroqConfigModal",
+        "closeGroqConfigModal",
+        "saveGroqConfig"
+      ],
+      "category": "UI",
+      "demo_markers": [
+        "MOCK_DATA",
+        "setTimeout"
+      ]
+    },
+    {
+      "path": "static/js/components/assessment.js",
+      "bytes": 28365,
+      "sha256": "d2845e2bffaff2d5b6ad55fab270e47007e2a6705398e67f19c0d55e5e443b88",
+      "functions": [
+        "renderCompetencyAssessment",
+        "getAssessmentStepHTML"
+      ],
+      "category": "UI",
+      "demo_markers": [
+        "MOCK_DATA"
+      ]
+    },
+    {
+      "path": "static/js/components/authModal.js",
+      "bytes": 112956,
+      "sha256": "23cc6b9e5a2b08b64fe47358b78198ece23fda88deeeff572d4a9a0bad024059",
+      "functions": [
+        "getRandomInt",
+        "generateCaptchaCode",
+        "syncCaptchaUI",
+        "renderCaptchaComponent",
+        "resetAuthState",
+        "isValidMobile",
+        "isValidEmail",
+        "isMinistrySelected",
+        "isDepartmentSelected",
+        "isDesignationSelected",
+        "isNameFilled",
+        "isAllPriorFilled",
+        "isStep1Valid",
+        "isPasswordLengthValid",
+        "hasPasswordLetter",
+        "hasPasswordNumber",
+        "isStep3Valid",
+        "getDepartmentList",
+        "getDesignationList",
+        "startResendTimer",
+        "startLoginResendTimer",
+        "renderAuthModal",
+        "renderLeftLoginHero",
+        "renderLeftRegisterHero",
+        "renderLoginForm",
+        "renderLoginStep1",
+        "renderLoginStep2",
+        "renderRegistrationWizard",
+        "renderStep1",
+        "renderStep2",
+        "renderStep3",
+        "updateLoginStep2State"
+      ],
+      "category": "UI",
+      "demo_markers": [
+        "Math.random",
+        "setTimeout"
+      ]
+    },
+    {
+      "path": "static/js/components/framework.js",
+      "bytes": 27978,
+      "sha256": "7c114bb433d590cea5d050c1d4312d42f315fe6f477ec8be76bc07dabcc3711f",
+      "functions": [
+        "renderCompetencyFramework",
+        "filterRoleTier",
+        "switchFrameworkView",
+        "filterDomain",
+        "filterCompetencyCards",
+        "showCompetencyLevelModal"
+      ],
+      "category": "UI",
+      "demo_markers": [
+        "MOCK_DATA"
+      ]
+    },
+    {
+      "path": "static/js/components/igotHub.js",
+      "bytes": 11496,
+      "sha256": "caadd7d3e6a3870637f525e07457c72182c161d3b2459a302c87efb95699f8d3",
+      "functions": [
+        "renderIgotHub",
+        "switchIgotTab",
+        "triggerIgotSync"
+      ],
+      "category": "UI",
+      "demo_markers": [
+        "setTimeout"
+      ]
+    },
+    {
+      "path": "static/js/components/landing.js",
+      "bytes": 122873,
+      "sha256": "0016c8f01cbade259215b06a18d57d76787fcf6cd00aa9f9faa8b0492dbe472d",
+      "functions": [
+        "renderLandingPage",
+        "renderSingleReview",
+        "renderDemoModal",
+        "initStatsCountUpObserver",
+        "initStaggeredPillarCards",
+        "initDynamicSearchPlaceholder",
+        "initRotatingQuote",
+        "initLandingCharts",
+        "initReviewCarouselTimer",
+        "updateReviewDOM",
+        "showInlineErr",
+        "scrollToSection",
+        "renderAppSafe"
+      ],
+      "category": "UI",
+      "demo_markers": [
+        "Math.random",
+        "setTimeout"
+      ]
+    },
+    {
+      "path": "static/js/components/learnerDash.js",
+      "bytes": 26849,
+      "sha256": "d311972f54341a542886825b5cb95a1744c823bfa5c988eba64935ab3244b683",
+      "functions": [
+        "renderLearnerDashboard",
+        "initCompetencyRadarChart"
+      ],
+      "category": "UI",
+      "demo_markers": [
+        "MOCK_DATA"
+      ]
+    },
+    {
+      "path": "static/js/components/learningPath.js",
+      "bytes": 7983,
+      "sha256": "ec4e815b15bf469ab26d516e9336b0de4577f5f5b1eb815d97fd420f11ed1c57",
+      "functions": [
+        "renderLearningPath",
+        "togglePathItemCompletion"
+      ],
+      "category": "UI",
+      "demo_markers": []
+    },
+    {
+      "path": "static/js/components/navbar.js",
+      "bytes": 10044,
+      "sha256": "f94c98bd66a76a93bd8fdeaeb23cb6fa772dc0a48d35b7af3a2f5b1d421fa4cb",
+      "functions": [
+        "renderNavbar"
+      ],
+      "category": "UI",
+      "demo_markers": [
+        "setTimeout"
+      ]
+    },
+    {
+      "path": "static/js/components/profile.js",
+      "bytes": 39211,
+      "sha256": "3473b9050788bd5d2a2a9ee7a3456d9e8ee799a28ba6d7d0354d4221c13af4b2",
+      "functions": [
+        "renderUserProfile"
+      ],
+      "category": "UI",
+      "demo_markers": [
+        "MOCK_DATA"
+      ]
+    },
+    {
+      "path": "static/js/components/quizPlayer.js",
+      "bytes": 26848,
+      "sha256": "d33ba1d733026041735b113ab6ad8e6da97bb6bc9e120f137daca7d08e68e25b",
+      "functions": [
+        "formatQuizTime",
+        "startLiveQuizTimer",
+        "stopLiveQuizTimer",
+        "renderQuizPlayer",
+        "renderQuizResultScreen",
+        "navigateQuizQ",
+        "selectQuizAnswer",
+        "toggleMarkReview",
+        "confirmSubmitQuiz"
+      ],
+      "category": "UI",
+      "demo_markers": [
+        "setTimeout"
+      ]
+    },
+    {
+      "path": "static/js/components/recommendations.js",
+      "bytes": 18435,
+      "sha256": "6aeb5e1f4069373c8094cabb1cdbd73aa12a85632ccab3d569d2f168a91087d6",
+      "functions": [
+        "renderRecommendations",
+        "filterCourseSource",
+        "addCourseToPath",
+        "enrolCourseDirect",
+        "showFormulaModal",
+        "showCourseBreakdownModal"
+      ],
+      "category": "UI",
+      "demo_markers": [
+        "MOCK_DATA"
+      ]
+    },
+    {
+      "path": "static/js/components/reports.js",
+      "bytes": 8511,
+      "sha256": "0bc0b6691f5d001b9af75803b74087e2d96756403a4cfd604166a1aba9667b44",
+      "functions": [
+        "renderReportsCenter",
+        "downloadReport"
+      ],
+      "category": "UI",
+      "demo_markers": [
+        "MOCK_DATA"
+      ]
+    },
+    {
+      "path": "static/js/components/trainerDash.js",
+      "bytes": 10549,
+      "sha256": "ac81d1c0fc5c8cf0f1891122be5052017fbc55a79318564551aadc95b789af82",
+      "functions": [
+        "renderTrainerDashboard"
+      ],
+      "category": "UI",
+      "demo_markers": []
+    },
+    {
+      "path": "static/js/mockData.js",
+      "bytes": 54107,
+      "sha256": "3f09c8d60488704135e35a30cc5d607b125ccfcfc8fac8b14b81f2833a0797d7",
+      "functions": [
+        "generate50Users",
+        "getOfficerRoleTier",
+        "getFracRequirement",
+        "calculateDynamicRecommendations"
+      ],
+      "category": "UI",
+      "demo_markers": [
+        "MOCK_DATA"
+      ]
+    },
+    {
+      "path": "static/js/orgDataService.js",
+      "bytes": 40254,
+      "sha256": "71ed129016dbf8b15f2a6000ad4a7910a685c8450c67540b1a4f5403ba0885a6",
+      "functions": [
+        "makeDivisions",
+        "makeStateDESHierarchy"
+      ],
+      "category": "UI",
+      "demo_markers": []
+    },
+    {
+      "path": "static/js/store.js",
+      "bytes": 25503,
+      "sha256": "3c766763744a7680715064df3eeef2d37c6dbaf3ffdfb1ac508b0b9930689a2c",
+      "functions": [],
+      "category": "UI",
+      "demo_markers": [
+        "MOCK_DATA",
+        "Math.random",
+        "setTimeout"
+      ]
+    },
+    {
+      "path": "statskill-competency-framework-v2.md",
+      "bytes": 5928,
+      "sha256": "b9b3398281446d310376267a4dd26b946f767ebba889a40e7eca3e880103f36b",
+      "functions": [],
+      "category": "documentation",
+      "demo_markers": []
+    },
+    {
+      "path": "statskill-ministry-department-framework.md",
+      "bytes": 13978,
+      "sha256": "9d74bc43772a6a27d6a853800470cea09fe38b259e2e4a22f8e3edfcde55ecb7",
+      "functions": [],
+      "category": "documentation",
+      "demo_markers": []
+    },
+    {
+      "path": "statskill-ministry-department-framework.pdf",
+      "bytes": 76178,
+      "sha256": "92998c6a66c98e20c90a69c578e34621744781ae35d9205586a3575a5b8a04d5",
+      "category": "metadata or binary; no executable integration"
+    },
+    {
+      "path": "sync_matrix_mappings.py",
+      "bytes": 15525,
+      "sha256": "9a09d98279f47cb8c9ad9b56a41a11ee14dd9433a19bac89f2104ee43f639919",
+      "functions": [
+        "sync_mappings"
+      ],
+      "imports": [
+        "sqlite3",
+        "json",
+        "os"
+      ],
+      "category": "server or mapping utility"
+    },
+    {
+      "path": "users.json",
+      "bytes": 27969,
+      "sha256": "00037e798b2cead2bd39060e83eae54496f90e78c9980de59c01246fd50a79cd",
+      "category": "metadata or binary; no executable integration"
+    }
+  ]
+}

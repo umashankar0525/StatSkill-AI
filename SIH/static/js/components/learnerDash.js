@@ -1,18 +1,22 @@
 /**
  * Learner Dashboard Component
- * Dedicated personalized dashboard for Ananya Sharma (Statistical Officer).
+ * Imported dashboard, connected to authenticated backend evidence.
  * Features: 5 KPI Cards with trends, Competency Radar Chart (Current vs Required), Prioritized Skill Gaps list with direct action buttons.
  */
 
 function renderLearnerDashboard(state) {
-    const user = state.user || MOCK_DATA.currentUser;
+    const user = state.user || {};
     const lang = state.currentLanguage || 'en';
     const overallScore = state.overallScore;
 
+    const userDesig = (typeof user.designation === 'object' && user.designation)
+        ? (user.designation.title || user.designation.name || 'Not provided')
+        : (String(user.designation || user.role || '').trim() === '[object Object]' || !(user.designation || user.role) ? 'Not provided' : String(user.designation || user.role));
+
     // Filter skill gaps from all competencies
     const allComps = [];
-    state.competencyFramework.forEach(domain => {
-        domain.competencies.forEach(comp => {
+    (state.competencyFramework || []).forEach(domain => {
+        (domain.competencies || []).forEach(comp => {
             if (comp.gap > 0) {
                 allComps.push(comp);
             }
@@ -21,35 +25,65 @@ function renderLearnerDashboard(state) {
 
     // Sort by critical, high, moderate
     const priorityOrder = { "Critical": 1, "High": 2, "Moderate": 3, "None": 4 };
-    allComps.sort((a, b) => priorityOrder[a.priority] - priorityOrder[b.priority]);
+    allComps.sort((a, b) => (priorityOrder[a.priority] || 4) - (priorityOrder[b.priority] || 4));
 
     return `
     <div class="max-w-7xl mx-auto px-4 sm:px-8 py-8 space-y-8">
-        <!-- Top Personalized Greeting Banner -->
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm border-l-4 border-orange-500">
-            <div>
-                <div class="flex items-center gap-2 flex-wrap">
-                    <span class="text-xs font-bold text-orange-600 bg-orange-100 px-2.5 py-0.5 rounded-full uppercase">Official Cadre</span>
-                    <span class="text-xs font-bold text-blue-700 bg-blue-100 px-2.5 py-0.5 rounded-full">${user.designation || user.role || 'Officer'}</span>
-                    <span class="text-xs text-slate-500 font-medium">Employee ID: ${user.employeeId || 'GOV/2026/001'}</span>
+        <!-- Top Personalized Greeting Banner with Complete User Profile -->
+        <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-slate-200/80 shadow-md flex flex-col md:flex-row md:items-center justify-between gap-6 border-l-4 border-l-teal-500">
+            <div class="flex items-start sm:items-center gap-4 sm:gap-5 flex-1">
+                <!-- Circular Profile Picture Preview -->
+                <div class="relative w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden bg-navy-900 border-2 border-teal-500/80 flex-shrink-0 shadow-sm flex items-center justify-center" style="background: #0B1B2B;">
+                    ${(user.profile_picture || user.avatar) ? `
+                        <img src="${user.profile_picture || user.avatar}" alt="${user.full_name || user.name}" class="w-full h-full object-cover">
+                    ` : `
+                        <span class="text-xl sm:text-2xl font-black text-teal-300">
+                            ${(user.full_name || user.name || 'O').charAt(0).toUpperCase()}
+                        </span>
+                    `}
                 </div>
-                <h1 class="text-2xl sm:text-3xl font-black text-navy-900 mt-1" style="color: #0B2545;">
-                    Good morning, ${(lang === 'hi' && user.hindiName) ? user.hindiName : ((lang === 'te' && user.teluguName) ? user.teluguName : (user.name || 'Officer'))}
-                </h1>
-                <p class="text-xs sm:text-sm text-slate-600">
-                    Here's your competency and learning overview for the <span class="font-semibold text-navy-900">${user.department || user.ministry || 'Ministry of Statistics & Programme Implementation'}</span>.
-                </p>
+
+                <div class="space-y-1.5 flex-1">
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <span class="text-xs font-bold text-teal-800 bg-teal-50 border border-teal-200/60 px-2.5 py-0.5 rounded-full uppercase">
+                            ${user.administration_type || 'Official Cadre'}
+                        </span>
+                        <span class="text-xs font-bold text-slate-700 bg-slate-100 border border-slate-200/80 px-2.5 py-0.5 rounded-full">
+                            ${user.designation || userDesig}
+                        </span>
+                        <span class="text-xs font-mono text-slate-500 font-medium">
+                            ID: ${user.government_id || user.employeeId || 'Not provided'}
+                        </span>
+                    </div>
+
+                    <h1 class="text-xl sm:text-3xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2 flex-wrap font-heading">
+                        <span>${(lang === 'hi' && user.hindiName) ? user.hindiName : ((lang === 'te' && user.teluguName) ? user.teluguName : (user.full_name || user.name || 'Officer'))}</span>
+                        ${user.username ? `<span class="text-xs sm:text-sm font-mono font-normal text-teal-700 bg-teal-50 px-2 py-0.5 rounded-md">@${user.username}</span>` : ''}
+                    </h1>
+
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        <span class="font-semibold text-slate-800">${user.department || user.ministry || 'Not provided'}</span>
+                        ${user.age ? ` • <span class="text-slate-500">${user.age} yrs</span>` : ''}
+                        • <span class="text-slate-500">${user.experience ?? 'Not provided'} yrs cadre experience</span>
+                    </p>
+
+                    <div class="text-[11px] text-slate-500 flex items-center gap-2 flex-wrap pt-0.5">
+                        <span><i class="fa-solid fa-graduation-cap text-teal-600"></i> ${user.education || user.degree || 'Not provided'}</span>
+                        <span>•</span>
+                        <span><i class="fa-solid fa-briefcase text-teal-600"></i> ${user.projects || user.projectsHandled || 'No responsibilities saved'}</span>
+                    </div>
+                </div>
             </div>
 
             <!-- Quick Action Buttons -->
-            <div class="flex items-center gap-3 flex-wrap">
-                <button onclick="store.navigate('assessment')" class="btn btn-primary text-xs sm:text-sm py-2 px-4 shadow-sm">
-                    <i class="fa-solid fa-clipboard-check text-orange-400"></i>
-                    Take Skill Assessment
+            <div class="flex items-center gap-3 flex-wrap flex-shrink-0">
+                <button onclick="store.navigate('assessment')" class="btn btn-primary text-xs sm:text-sm py-2.5 px-4 shadow-sm cursor-pointer">
+                    <i class="fa-solid fa-clipboard-check text-teal-400"></i>
+                    <span>Skill Assessment</span>
                 </button>
-                <button onclick="store.navigate('recommendations')" class="btn btn-saffron text-xs sm:text-sm py-2 px-4 shadow-sm">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    AI Learning Advisor
+                <button onclick="store.navigate('recommendations')" class="btn btn-teal text-xs sm:text-sm py-2.5 px-4 shadow-sm cursor-pointer">
+                    <i class="fa-solid fa-compass"></i>
+                    <span>Learning Paths</span>
                 </button>
             </div>
         </div>
@@ -60,10 +94,10 @@ function renderLearnerDashboard(state) {
             <div class="stat-card p-5 stat-card-highlight flex flex-col justify-between">
                 <div>
                     <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Overall Competency</span>
-                    <div class="text-3xl font-black text-navy-900 mt-1" style="color: #0B2545;">${overallScore}%</div>
+                    <div class="text-3xl font-black text-navy-900 mt-1" style="color: #0B2545;">${overallScore === null ? tr('Not assessed') : overallScore + '%'}</div>
                 </div>
                 <div class="mt-3 flex items-center text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-1 rounded w-fit">
-                    <i class="fa-solid fa-arrow-trend-up mr-1"></i> ↑ 8% from last assessment
+                    <i class="fa-solid fa-arrow-trend-up mr-1"></i> ${state.assessedCount} assessed skills
                 </div>
             </div>
 
@@ -89,14 +123,14 @@ function renderLearnerDashboard(state) {
                 </div>
             </div>
 
-            <!-- Learning Hours -->
+            <!-- Active goals -->
             <div class="stat-card p-5 flex flex-col justify-between border-top-navy">
                 <div>
-                    <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Learning Hours</span>
-                    <div class="text-3xl font-black text-navy-900 mt-1" style="color: #0B2545;">${user.learningHours} hrs</div>
+                    <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Active goals</span>
+                    <div class="text-3xl font-black text-navy-900 mt-1" style="color: #0B2545;">${state.activeGoalCount}</div>
                 </div>
                 <div class="mt-3 text-xs font-semibold text-slate-500">
-                    <i class="fa-solid fa-clock text-orange-500"></i> Target: 50 hrs / year
+                    <i class="fa-solid fa-clock text-orange-500"></i> Your saved learning objectives
                 </div>
             </div>
 
@@ -107,7 +141,7 @@ function renderLearnerDashboard(state) {
                     <div class="text-3xl font-black text-purple-700 mt-1">${user.assessmentsCompleted}</div>
                 </div>
                 <div class="mt-3 text-xs font-bold text-purple-700 bg-purple-50 px-2 py-1 rounded w-fit">
-                    <i class="fa-solid fa-circle-check mr-1"></i> 100% Validated
+                    <i class="fa-solid fa-circle-check mr-1"></i> Completed and saved
                 </div>
             </div>
         </div>
@@ -121,10 +155,10 @@ function renderLearnerDashboard(state) {
                         <h2 class="text-lg font-bold text-navy-900" style="color: #0B2545;">
                             Competency Radar Profile
                         </h2>
-                        <span class="text-xs text-slate-500 font-medium">Role: Statistical Officer</span>
+                        <span class="text-xs text-slate-500 font-medium">${userDesig}</span>
                     </div>
                     <p class="text-xs text-slate-600">
-                        Comparing your <strong>Current Capability</strong> against the <strong>Mandated Target Level</strong> across 5 core dimensions.
+                        Comparing your <strong>Current Capability</strong> against the <strong>Required Level</strong> for your role. Unassessed skills have no current score.
                     </p>
                 </div>
 
@@ -157,16 +191,16 @@ function renderLearnerDashboard(state) {
                             Identified Competency Gaps
                         </h2>
                         <p class="text-xs text-slate-600">
-                            Ranked by urgency and MoSPI departmental transformation priority.
+                            Based on your saved assessment results.
                         </p>
                     </div>
                     <button onclick="store.navigate('recommendations')" class="btn btn-secondary text-xs py-1.5 px-3">
-                        <i class="fa-solid fa-sparkles text-orange-500"></i> Auto-Bridge All Gaps
+                        <i class="fa-solid fa-sparkles text-orange-500"></i> Find learning
                     </button>
                 </div>
 
                 <!-- Gaps List -->
-                <div class="space-y-2.5 max-h-[380px] overflow-y-auto pr-1">
+                <div class="space-y-2.5 max-h-[380px] overflow-y-auto pr-1">${!allComps.length ? empty(state.assessedCount ? "No assessed gaps found." : "Complete an assessment to discover your skill gaps.") : ""}
                     ${allComps.map(comp => {
                         let badgeClass = "gap-moderate";
                         let priorityIcon = "fa-circle-info";
@@ -178,7 +212,7 @@ function renderLearnerDashboard(state) {
                             priorityIcon = "fa-triangle-exclamation";
                         }
 
-                        const levelLabels = { 1: "L1 Awareness", 2: "L2 Foundation", 3: "L3 Working", 4: "L4 Advanced", 5: "L5 Expert" };
+                        const levelLabels = {0:"L0 No demonstrated foundation",1:"L1 Foundational",2:"L2 Working",3:"L3 Practitioner",4:"L4 Advanced",5:"L5 Expert",6:"L6 Leadership"};
 
                         return `
                         <div class="p-3.5 rounded-xl border border-slate-200 bg-white hover:border-slate-300 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-sm">
@@ -190,10 +224,10 @@ function renderLearnerDashboard(state) {
                                     <span class="text-xs font-bold text-navy-900" style="color: #0B2545;">${comp.name}</span>
                                     <span class="text-[10px] text-slate-500">(${comp.domain})</span>
                                 </div>
-                                <div class="text-xs text-slate-600 flex items-center gap-3">
-                                    <span>Current: <strong class="text-slate-800">${levelLabels[comp.currentLevel]}</strong></span>
+                                <div class="text-xs text-slate-600 flex items-center gap-3 flex-wrap">
+                                    <span>Current: <strong class="text-slate-800">${levelLabels[comp.currentLevel] || 'Not assessed'}</strong></span>
                                     <span class="text-slate-400">→</span>
-                                    <span>Required: <strong class="text-orange-700">${levelLabels[comp.requiredLevel]}</strong></span>
+                                    <span>Required level: <strong class="text-orange-700">${levelLabels[comp.requiredLevel]}</strong></span>
                                     <span class="text-slate-400">|</span>
                                     <span>Gap: <strong class="text-red-600">${comp.gap} Levels</strong></span>
                                 </div>
@@ -228,6 +262,7 @@ function renderLearnerDashboard(state) {
                 </div>
 
                 <div class="space-y-3">
+                    ${!state.learningPath.length ? empty("No courses yet. Explore the learning advisor.") : ""}
                     ${state.learningPath.slice(0, 3).map((item, idx) => `
                         <div class="p-3.5 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white flex items-center justify-between gap-4 transition-all">
                             <div class="flex items-center gap-3">
@@ -263,56 +298,26 @@ function renderLearnerDashboard(state) {
                 </div>
             </div>
 
-            <!-- Recent Assessment Result Card -->
+            <!-- Saved assessment and objective summaries in the imported card layout. -->
             <div class="lg:col-span-5 stat-card p-6 space-y-4 bg-gradient-to-br from-white via-slate-50 to-blue-50/40">
-                <div class="flex justify-between items-center">
-                    <h2 class="text-lg font-bold text-navy-900" style="color: #0B2545;">
-                        Latest Assessment Insight
-                    </h2>
-                    <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">
-                        +6% Improvement
-                    </span>
-                </div>
-
-                <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm space-y-3">
-                    <div class="flex justify-between items-center text-xs">
-                        <span class="text-slate-600">Sampling & Survey Methodologies Quiz</span>
-                        <strong class="text-navy-900 font-bold text-sm">82% Score</strong>
-                    </div>
-
-                    <div class="space-y-1.5 text-xs">
-                        <div class="text-emerald-700 font-semibold flex items-center gap-1.5">
-                            <i class="fa-solid fa-circle-check text-emerald-600"></i>
-                            Strong: Multi-Stage Stratified Sampling, Price Indices
-                        </div>
-                        <div class="text-amber-700 font-semibold flex items-center gap-1.5">
-                            <i class="fa-solid fa-triangle-exclamation text-amber-500"></i>
-                            Areas to Improve: Non-response Imputation, SDC
-                        </div>
-                    </div>
-                </div>
-
-                <div class="p-3 bg-blue-50 border border-blue-200 rounded-xl text-xs text-blue-900 space-y-2">
-                    <div class="font-bold flex items-center gap-1.5">
-                        <i class="fa-solid fa-lightbulb text-orange-500"></i> Recommended Next Action
-                    </div>
-                    <p class="text-[11px] text-blue-800">
-                        Attempt the AI-generated assessment from the <em>NSSO 78th Round Sampling Manual</em> to consolidate your survey weighting proficiency.
-                    </p>
-                    <button onclick="store.navigate('ai-generator')" class="btn btn-primary text-xs py-1.5 px-3 w-full">
-                        <i class="fa-solid fa-file-pdf text-orange-400"></i> Launch AI Assessment Generator
-                    </button>
+                <h2 class="text-lg font-bold text-navy-900">Latest assessment</h2>
+                ${renderRecentAssessment()}
+                <div class="p-4 bg-gradient-to-br from-blue-50 to-indigo-50/60 border border-blue-200 rounded-2xl text-xs space-y-3">
+                    <h3 class="font-bold text-navy-900">Your next step</h3>
+                    <p>Build your skills with an assessment tailored to your work.</p>
+                    <button onclick="store.startAssessment()" class="btn btn-primary" ${store.state.busy?'disabled':''}>${tr('Start my assessment')}</button>
+                    <button onclick="store.navigate('okrs')" class="btn btn-secondary">${tr('My goals')}</button>
                 </div>
             </div>
         </div>
-    </div>
-    `;
+    </div>`;
 }
 
-// Chart.js Radar Initialization Function
 function initCompetencyRadarChart() {
     const ctx = document.getElementById('competencyRadarChart');
     if (!ctx) return;
+    if (typeof Chart === 'undefined') {ctx.replaceWith(document.createTextNode('Open My skills to see your saved levels.')); return;}
+    const gaps=store.state.data.gaps.slice(0,8);
 
     if (window.radarChartInstance) {
         window.radarChartInstance.destroy();
@@ -321,17 +326,11 @@ function initCompetencyRadarChart() {
     window.radarChartInstance = new Chart(ctx, {
         type: 'radar',
         data: {
-            labels: [
-                'Statistical Methods',
-                'Technical / Python / AI',
-                'Digital Governance',
-                'Behavioural & Ethics',
-                'Managerial & Strategy'
-            ],
+            labels: gaps.map(g=>tr(g.competency_name)),
             datasets: [
                 {
-                    label: 'Current Level',
-                    data: [3.8, 2.0, 2.5, 3.5, 3.0],
+                    label: tr('Assessed'),
+                    data: gaps.map(g=>g.current_level),
                     fill: true,
                     backgroundColor: 'rgba(11, 37, 69, 0.2)',
                     borderColor: '#0B2545',
@@ -342,8 +341,8 @@ function initCompetencyRadarChart() {
                     borderWidth: 2
                 },
                 {
-                    label: 'Required Target',
-                    data: [4.0, 3.8, 3.5, 4.0, 3.5],
+                    label: tr('Required'),
+                    data: gaps.map(g=>g.required_level),
                     fill: true,
                     backgroundColor: 'rgba(234, 88, 12, 0.15)',
                     borderColor: '#EA580C',
@@ -367,7 +366,7 @@ function initCompetencyRadarChart() {
                     angleLines: { color: 'rgba(0, 0, 0, 0.08)' },
                     grid: { color: 'rgba(0, 0, 0, 0.08)' },
                     suggestedMin: 0,
-                    suggestedMax: 5,
+                    suggestedMax: 6,
                     ticks: {
                         stepSize: 1,
                         display: false
